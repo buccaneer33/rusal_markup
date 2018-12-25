@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="body body--theme">
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__info-block">
+				<div class="header__logo"><img class="header__image" src="img/Calculator.png" /></div>
+				<div class="header__name-block">
+					<h1 class="header__name">Калькулятор</h1>
+					<span class="header__slogan">Обычный или инженерный</span>
+				</div>
+				<div class="header__mode-block">
+					<h2 class="header__name"><%= htmlWebpackPlugin.options.mode %></h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="wrapper">
+			<div class="calculator calculator--theme-dark" id="calculator1">
+			<nav class="calculator__menu">
+				<ul class="nav">
+					<li class="nav__item submenu--open">Вид:
+						<ul class="nav__submenu submenu">
+							<li class="submenu__item">Тема оформления:
+								<div class="submenu__theme">
+									<div>
+										<label><input type="radio" data-theme="dark"  checked>Темный</label>
+									</div>
+									<div>
+										<label><input type="radio" data-theme="light">Светлый</label>
+									</div>
+								</div>
+							</li>
+							<li class="submenu__item">Тип:
+								<div class="submenu__mode">
+									<div>
+										<label><input type="radio" data-mode="simple" name="simple" value="Простой" checked>Простой</label>
+									</div>
+									<div>
+										<label><input type="radio" data-mode="eng" name="eng" value="Инженерный">Инженерный</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item submenu--open"> Опции:
+						<ul class="nav__submenu submenu">
+							<li class="submenu__item">История:
+								<div class="submenu__hist">
+									<div>
+										<label><input type="radio" data-hist="close" name="close" value="Закрыть" checked>Закрыть</label>
+									</div>
+									<div>
+										<label><input type="radio" data-hist="open" name="open" value="Открыть">Открыть</label>
+									</div>
+									<div></div>
+									<div>
+										<button type="button" data-hist="clear" class="">Очистить</button>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+				<div  class="calculator__display-block">
+					<div  class="calculator__display-hist">
+						<ol class="history-list"></ol>
+					</div>
+					<div  class="calculator__display-upper">&nbsp</div>
+					<div  class="calculator__display">0</div>
+
+				</div>
+				<div class="calculator__additional-keys-block">
+
+				</div>
+				<div class="simple">
+					<button  class="calculator__clear button--clear">C</button>
+					<button  data-ops="pow2" class="calculator__ops">x&#178;</button>
+					<button  data-ops="opReverse" class="calculator__ops">&#177;</button>
+					<!--<button  data-ops="sqrt" class="calculator__ops">&radic;</button>-->
+					<button  data-ops="proc" class="calculator__ops">&#37;</button>
+
+					<button class="calculator__num" data-num="7">7</button>
+					<button class="calculator__num" data-num="8">8</button>
+					<button class="calculator__num" data-num="9">9</button>
+					<button data-ops="plus" class="calculator__ops">+</button>
+
+					<button class="calculator__num" data-num="4">4</button>
+					<button class="calculator__num" data-num="5">5</button>
+					<button class="calculator__num" data-num="6">6</button>
+					<button data-ops="minus" class="calculator__ops">-</button>
+
+					<button class="calculator__num" data-num="1">1</button>
+					<button class="calculator__num" data-num="2">2</button>
+					<button class="calculator__num" data-num="3">3</button>
+					<button data-ops="times" class="calculator__ops">*</button>
+
+					<button class="calculator__num" data-num="0">0</button>
+					<button class="calculator__num" data-num=".">.</button>
+					<button class="calculator__result" data-result="">=</button>
+					<button data-ops="divide" class="calculator__ops">/</button>
+				</div>
+			</div>
+			<div class="calculator calculator--theme-dark" id="calculator2">
+			<nav class="calculator__menu">
+				<ul class="nav">
+					<li class="nav__item submenu--open">Вид:
+						<ul class="nav__submenu submenu">
+							<li class="submenu__item">Тема оформления:
+								<div class="submenu__theme">
+									<div>
+										<label><input type="radio" data-theme="dark"  checked>Темный</label>
+									</div>
+									<div>
+										<label><input type="radio" data-theme="light">Светлый</label>
+									</div>
+								</div>
+							</li>
+							<li class="submenu__item">Тип:
+								<div class="submenu__mode">
+									<div>
+										<label><input type="radio" data-mode="simple" name="simple" value="Простой" checked>Простой</label>
+									</div>
+									<div>
+										<label><input type="radio" data-mode="eng" name="eng" value="Инженерный">Инженерный</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item submenu--open"> Опции:
+						<ul class="nav__submenu submenu">
+							<li class="submenu__item">История:
+								<div class="submenu__hist">
+									<div>
+										<label><input type="radio" data-hist="close" name="close" value="Закрыть" checked>Закрыть</label>
+									</div>
+									<div>
+										<label><input type="radio" data-hist="open" name="open" value="Открыть">Открыть</label>
+									</div>
+									<div></div>
+									<div>
+										<button type="button" data-hist="clear" class="">Очистить</button>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+				<div  class="calculator__display-block">
+					<div  class="calculator__display-hist">
+						<ol class="history-list"></ol>
+					</div>
+					<div  class="calculator__display-upper">&nbsp</div>
+					<div  class="calculator__display">0</div>
+
+				</div>
+				<div class="calculator__additional-keys-block">
+
+				</div>
+				<div class="simple">
+					<button  class="calculator__clear button--clear">C</button>
+					<button  data-ops="pow2" class="calculator__ops">x&#178;</button>
+					<button  data-ops="sqrt" class="calculator__ops">&radic;</button>
+					<button  data-ops="proc" class="calculator__ops">&#37;</button>
+
+					<button class="calculator__num" data-num="7">7</button>
+					<button class="calculator__num" data-num="8">8</button>
+					<button class="calculator__num" data-num="9">9</button>
+					<button data-ops="plus" class="calculator__ops">+</button>
+
+					<button class="calculator__num" data-num="4">4</button>
+					<button class="calculator__num" data-num="5">5</button>
+					<button class="calculator__num" data-num="6">6</button>
+					<button data-ops="minus" class="calculator__ops">-</button>
+
+					<button class="calculator__num" data-num="1">1</button>
+					<button class="calculator__num" data-num="2">2</button>
+					<button class="calculator__num" data-num="3">3</button>
+					<button data-ops="times" class="calculator__ops">*</button>
+
+					<button class="calculator__num" data-num="0">0</button>
+					<button class="calculator__num" data-num=".">.</button>
+					<button class="calculator__result" data-result="">=</button>
+					<button data-ops="divide" class="calculator__ops">/</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper footer__wrapper">
+			<div class="footer__rights">
+				Copyright © 2018 - All Rights Reserved
+			</div>
+			<div class="footer__disigned-by">
+				Template by Buccaneer
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>

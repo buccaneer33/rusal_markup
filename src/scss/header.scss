@@ -1,0 +1,32 @@
+.header{
+	padding: 30px 0;
+
+	&__info-block{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+	&__logo{
+
+	}
+	&__image{
+		height: 55px;
+    width: 55px;
+		padding-right: 10px;
+	}
+	&__name-block{
+		border-left: 1px solid $calc__bgc--dark;
+		padding-left: 10px;
+	}
+		&__mode-block{
+		padding-left: 30px;
+	}
+	&__name{
+		margin: 0;
+	}
+	&__slogan{
+
+	}
+}
