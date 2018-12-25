@@ -1,7 +1,7 @@
 // interface colors
 $interface_color--pimary_light: rgba(255, 255, 255, 1);
 $interface_color--secondary_light: rgba(235, 235, 235, 1);
-$interface_color--secondary_success: rgba(71, 163, 213, 1);
+$interface_color--secondary_success: rgba(71, 163, 213, 1); //#47A3D5
 $interface_color--secondary_error: rgba(205, 89, 89, 1);
 // text colors
 $text_color--primary_dark: rgba(20, 20, 20, 1);
@@ -9,7 +9,7 @@ $text_color--secondary_inactive: #787878;
 $text_color--secondary_help: #A19F9F;
 $text_color--description: #BBBBBB;
 $text_color--link: #47A3D5;
-$text_color--link: #CD5959;
+$text_color--error: #CD5959;
 // background colors
 $bcg--primary: rgba(255, 255, 255, 1);
 $bcg--secondary-active: rgba(235, 235, 235, 1);
