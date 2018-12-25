@@ -1,20 +1,17 @@
-$body__bgc--color: #f9f9f9;
-$body__font--color: #505050;
-///////////////////////
-$calc__bgc--dark: #434649;
-$calc__font--dark: #ffffff;
-////////////////////////
-$button__bgc--color: #e2e2e2;
-$button__font--color:#666666;
-$button__hover--color:#ededed;
-$button__clear--color:#fcc;
-///////////////////
-///////////////////
-$calc__bgc--light: #f2f2f2;
-$calc__font--color: #ffffff;
-////////////////////
-$button__bgc--color: #e2e2e2;
-$button__font--color:#666666;
-$button__hover--color:#ededed;
-$button__clear--color:#fcc;
-////////////////////
+// interface colors
+$interface_color--pimary_light: rgba(255, 255, 255, 1);
+$interface_color--secondary_light: rgba(235, 235, 235, 1);
+$interface_color--secondary_success: rgba(71, 163, 213, 1);
+$interface_color--secondary_error: rgba(205, 89, 89, 1);
+// text colors
+$text_color--primary_dark: rgba(20, 20, 20, 1);
+$text_color--secondary_inactive: #787878;
+$text_color--secondary_help: #A19F9F;
+$text_color--description: #BBBBBB;
+$text_color--link: #47A3D5;
+$text_color--link: #CD5959;
+// background colors
+$bcg--primary: rgba(255, 255, 255, 1);
+$bcg--secondary-active: rgba(235, 235, 235, 1);
+$bcg--secondary-hover: rgba(8, 137, 208, 9);
+
