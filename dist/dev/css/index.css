@@ -1,2 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic);h1 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #47A3D5; }
+  h1::first-letter {
+    font-size: 24px; }
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #47A3D5; }
+  h2::first-letter {
+    font-size: 24px; }
+
+h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #141414; }
+  h3::first-letter {
+    font-size: 20px; }
+
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #141414; }
+  h4::first-letter {
+    font-size: 20px; }
+
+.body--theme {
+  background-color: #787878; }
+
+.header--theme {
+  background-color: white; }
+
+.main--theme {
+  background-color: white; }
+
+.footer--theme {
+  background-color: white; }
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  width: 80%;
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
+
+.header {
+  padding: 0px 0;
+  width: 100%;
+  height: 60px; }
+
+.footer {
+  height: 40px;
+  width: 100%; }
+
+.main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=index.css.map*/

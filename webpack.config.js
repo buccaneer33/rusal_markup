@@ -23,11 +23,11 @@ var clientConfig = (function webpackConfig() {
 	
   config.module = {
     rules: [
-			{test: /\.js$/,
-			/*	exclude: /node_modules/,
+		/*	{test: /\.js$/,
+				exclude: /node_modules/,
 				use: {loader: 'babel-loader',
-				options: {presets: ['babel-preset-env']}} */
-			},
+				options: {presets: ['babel-preset-env']}} 
+			},*/
 			{test: /\.(sa|sc|c)ss$/,
 				include: path.resolve(__dirname, 'src/scss'),
 				use: ExtractTextPlugin.extract({
