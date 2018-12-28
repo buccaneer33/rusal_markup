@@ -1,0 +1,12 @@
+.leng_switcher{
+  color: $text_color--secondary_help;
+  &__button{
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+
+    &--active{
+      color: $text_color--link;
+    }
+  }
+}

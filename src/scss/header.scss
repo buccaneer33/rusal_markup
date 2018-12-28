@@ -1,7 +1,29 @@
 .header{
-	padding: 0px 0;
+	padding: 0px 20px;
 	width: 100%;
 	height: 60px;
+	box-sizing: border-box;
+	border-bottom: 1px solid $interface_color--secondary_light;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
 
+}
+.header__description{
+	flex-grow: 1;
 
+	h1, h2, h3, h4{
+		display: inline;
+		margin: 0;
+		padding: 0 5px;
+	}
+}
+.header__leng{
+	
+}
+.header__logo{
+	padding: 0 20px;
 }

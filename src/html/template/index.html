@@ -7,23 +7,61 @@
 <body class="body body--theme">
 	<div class="wrapper ">
 		<header class="header header--theme">
-			<div class="header__logo"></div>
-			<div class="header__description"></div>
-			<div class="header__leng leng_switcher"></div>
-			<p>Header</p>
+			<div class="header__logo logo">
+				<img class="logo__img" src="img/logo.png" />
+			</div>
+			<div class="header__description"><h1>Карточка договора</h1>  <h2>— редактирование</h2> <h3>КАЗ-Д-15-218/06</h3> <h4>— неактивный документ</h4></div>
+			<div class="header__leng leng_switcher"><button class="leng_switcher__button leng_switcher__button--active">EN</button> | <button class="leng_switcher__button">RU</button></div>
 		</header>
 		<main class="main main--theme">
-			<nav class="menu menu_top"></nav>
-			<div class="">
-				<nav class="menu menu_left">
-
+			<nav class="navigation navigation_top">
+				<div class="navigation_top__submenu">
+					<ul class="navigation_top__list">
+						<li class="navigation_top__item icon icon--save_as">СОХРАНИТЬ КАК ЧЕРНОВИК</li>
+						<li class="navigation_top__item icon icon--save">СОХРАНИТЬ</li>
+						<li class="navigation_top__item icon icon--make_lists">СФОРМИРОВАТЬ СПИСКИ</li>
+						<li class="navigation_top__item icon icon--cancel">ОТМЕНА</li>
+					</ul>
+				</div>
+				<div class="navigation_top__switcher">Показать все перечни Скрыть все перечни</div>
+			</nav>
+			<section class="content">
+				<nav class="navigation navigation_left">
+					<ul class="navigation_left__list">
+						<li class="navigation_left__item navigation_left__item--active">ОСНОВНЫЕ РЕКВИЗИТЫ</li>
+						<li class="navigation_left__item">ЮРИДИЧЕСКОЕ ЛИЦО</li>
+						<li class="navigation_left__item">КОНТРАГЕНТ</li>
+						<li class="navigation_left__item">СТОИМОСТЬ</li>
+						<li class="navigation_left__item">ОТВЕТСТВЕННЫЕ</li>
+						<li class="navigation_left__item">ХАРАКТЕРИСТИКИ ДОГОВОРА</li>
+						<li class="navigation_left__item">ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</li>
+						<li class="navigation_left__item">СПЕЦИАЛЬНЫЕ ПРОЦЕДУРЫ</li>
+						<li class="navigation_left__item">СПИСКИ ПОЛЬЗОВАТЕЛЕЙ</li>
+					</ul>
 				</nav>
-				<section>
-					
-				</section>
+				<div class="info">
+					<div class="info__description">ОСНОВНЫЕ РЕКВИЗИТЫ</div>
+					<div class="info__content">
+						<p>Main</p>
+					</div>
+						
+				</div>
+				<nav class="navigation navigation_right">
+						<ul class="navigation_left__list">
+							<li class="navigation_left__item">ОСНОВНЫЕ РЕКВИЗИТЫ</li>
+							<li class="navigation_left__item">ЮРИДИЧЕСКОЕ ЛИЦО</li>
+							<li class="navigation_left__item">КОНТРАГЕНТ</li>
+							<li class="navigation_left__item">СТОИМОСТЬ</li>
+							<li class="navigation_left__item">ОТВЕТСТВЕННЫЕ</li>
+							<li class="navigation_left__item">ХАРАКТЕРИСТИКИ ДОГОВОРА</li>
+							<li class="navigation_left__item">ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</li>
+							<li class="navigation_left__item">СПЕЦИАЛЬНЫЕ ПРОЦЕДУРЫ</li>
+							<li class="navigation_left__item">СПИСКИ ПОЛЬЗОВАТЕЛЕЙ</li>
+						</ul>
+					</nav>
 
-			</div>
-			<p>Main</p>
+			</section>
+			
 		</main>
 			
 		<footer class="footer footer--theme">

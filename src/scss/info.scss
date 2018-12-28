@@ -1,0 +1,19 @@
+.info{
+  flex-grow: 1;
+  border-left: 1px solid $interface_color--secondary_light;
+  border-right: 1px solid $interface_color--secondary_light;
+  min-height: 83vh;
+  height: 100%;
+
+  &__description{
+    padding: 9px 0 9px 40px;
+    box-sizing: border-box;
+    height: 32px;
+    background-color:  $bgc--secondary-hover;
+    font-size: 12px;
+  }
+  &__content{
+    box-sizing: border-box;
+    padding-top: 24px;
+  }
+}
