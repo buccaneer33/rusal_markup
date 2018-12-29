@@ -1,0 +1,18 @@
+.support{
+  @extend .document_status;
+
+  &__header{
+    @extend .document_status__header;
+  }
+  &__list{
+    @extend .extended_menu__list;
+
+  }
+  &__status{
+    @extend .document_status__status;
+
+  }
+  &__link{
+    @extend .document_status__link;
+  }
+}

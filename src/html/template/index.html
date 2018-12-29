@@ -50,7 +50,95 @@
 				<div class="info">
 					<div class="info__description"><span class="menu_header">ОСНОВНЫЕ РЕКВИЗИТЫ</span></div>
 					<div class="info__content">
-						<p>Main</p>
+						<div class="basic_requisites">
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Категория документа *</label><br />
+								<span class="basic_requisites__value">Договоры/Договор</span>
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Орг. единица *</label><br />
+								<select class="basic_requisites__selection">
+										<option>Русал Глобал Менеджмент 1</option>
+										<option>Русал Глобал Менеджмент 2</option>
+										<option>Русал Глобал Менеджмент 3</option>
+										<option>Русал Глобал Менеджмент 4</option>
+								</select>
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Смешанный характер *</label><br />
+								<input type="radio" name="mixed" checked /><label>Да</label><br />
+								<input type="radio" name="mixed" /><label>Нет</label>
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Вид документа *</label><br />
+								<input class="basic_requisites__input" type="search" value="Договор на покупку материалов" />
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Рег. номер *</label><br />
+								<input class="basic_requisites__input"  type="text" value="Договор на покупку материалов" />
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Заголовок документа *</label><br />
+								<input class="basic_requisites__input"  type="text" value="Договор на покупку материалов" />						
+							</div>
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Краткое описание *</label><br />
+								<textarea class="basic_requisites__input">
+
+								</textarea>			
+							</div>
+							<div class="basic_requisites__dates">
+									<div class="basic_requisites__dates-item basic_requisites__number_of_contract">
+											<label class="basic_requisites__description">Номер договора (на бумаге) *</label>
+											<input class="basic_requisites__input"  type="text"/>				
+									</div>
+									<div class="basic_requisites__dates-item basic_requisites__date_of_document">
+											<label class="basic_requisites__description">Дата документа *</label>
+											<input class="basic_requisites__input"  type="date" data-date-inline-picker="true"/>			
+									</div>
+									<div class="basic_requisites__dates-item basic_requisites__document_type">
+										<label class="basic_requisites__description">Тип договорного документа *</label>
+										<select class="basic_requisites__selection">
+												<option>15.10.2018</option>
+												<option>15.10.2018</option>
+												<option>15.10.2018</option>
+												<option>15.10.2018</option>
+										</select>
+									</div>
+									<div class="basic_requisites__dates-item basic_requisites__date_of_begin">
+											<label class="basic_requisites__description">Дата начала действий *</label>
+											<input class="basic_requisites__input"  type="date" data-date-inline-picker="true"/>
+										</div>
+
+									<div class="basic_requisites__dates-item basic_requisites__main_contract">
+										<label class="basic_requisites__description">Основной договор *</label>
+										<input class="basic_requisites__input"  type="text"/>						
+									</div>
+									<div class="basic_requisites__dates-item basic_requisites__date_of_finish">
+										<label class="basic_requisites__description">Дата окончания действия *</label>
+										<input class="basic_requisites__input"  type="date" data-date-inline-picker="true"/>					
+									</div>
+
+							</div>
+
+							<div class="basic_requisites__item">
+								<label class="basic_requisites__description">Характер сделки *</label><a href="#">СКРЫТЬ ПЕРЕЧЕНЬ</a><br />
+								<input type="radio" name="deal_type" checked /><label>Доходная</label><br />
+								<input type="radio" name="deal_type" /><label>Расходная без инвест. бюджета</label><br />
+								<input type="radio" name="deal_type" /><label>Расходная с инвест. бюджетом</label><br />
+								<input type="radio" name="deal_type" /><label>Встречная</label><br />
+								<input type="radio" name="deal_type" /><label>Без платежей</label><br />
+								<input type="radio" name="deal_type" /><label>Безвозмездная</label><br />
+								<input type="radio" name="deal_type" /><label>Не предполагает оплаты, в т.ч. неустоек, потерь, indemnity</label><br />								
+							</div>
+
+
+
+
+
+							
+
+						</div>
 					</div>
 						
 				</div>
@@ -69,9 +157,44 @@
 					</div>
 
 					<div class="document_status">
-						<h3 class="document_status__header header3">Статус документа</h3>
-						<span class="document_status__status header3">Неактивен</span>
-						<a href="#" class="document_status__link">Изменить</a>
+						<h3 class="document_status__header">СТАТУС ДОКУМЕНТА</h3>
+						<p class="document_status__status">Неактивный</p>
+						<a href="#" class="document_status__link">АКТИВИРОВАТЬ</a>
+					</div>
+					<div class="contractor">
+							<h3 class="contractor__header">ОТВЕТСТВЕННЫЙ ЗА ЗАКЛЮЧЕНИЕ</h3>
+							<p class="contractor__status">Константинопольский К.К.</p>
+							<a href="#" class="contractor__link">ИЗМЕНИТЬ</a>
+					</div>
+					<div class="add_document_menu">
+							<h3 class="add_document_menu__header">ДОБАВЛЕНИЕ СВЯЗАННОГО ДОКУМЕНТА</h3>
+							<ul class="add_document_menu__list">
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">КОММЕНТАРИЙ</a></li>
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">ССЫЛКА НА ДОКУМЕНТ</a></li>
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">ПОДЧИНЕННЫЙ ДОКУМЕНТ</a></li>
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">ПОРУЧЕНИЕ</a></li>
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">ПОРУЧЕНИЕ СПИСКОМ</a></li>
+								<li class="add_document_menu__item"><a href="#" class="add_document_menu__link">УВЕДОМЛЕНИЕ</a></li>
+							</ul>	
+					</div>
+					<div class="document_reports">
+							<h3 class="document_reports__header">ОТЧЕТЫ ПО ДОКУМЕНТУ</h3>
+							<ul class="document_reports__list">
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Лист согласования</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Версии файлов</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Расчет сумм</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Все док-ты сделки</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Сводный лист</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Связанные документы</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Акты договора</a></li>
+								<li class="document_reports__item"><a href="#" class="document_reports__link">Суммы ИБ по годам</a></li>
+							</ul>	
+					</div>
+					<div class="support">
+							<h3 class="support__header">ПОМОЩЬ</h3>
+							<ul class="support__list">
+								<li class="support__item"><a href="#" class="support__link">ЗАПРОС АДМИНИСТРАТОРУ</a></li>
+							</ul>	
 					</div>
 						
 

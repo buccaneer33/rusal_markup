@@ -1,0 +1,15 @@
+.contractor{
+  @extend .document_status;
+
+  &__header{
+    @extend .document_status__header;
+  }
+  &__status{
+    @extend .document_status__status;
+
+  }
+  &__link{
+    @extend .document_status__link;
+  }
+
+}
