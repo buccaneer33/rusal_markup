@@ -10,54 +10,71 @@
 			<div class="header__logo logo">
 				<img class="logo__img" src="img/logo.png" />
 			</div>
-			<div class="header__description"><h1>Карточка договора</h1>  <h2>— редактирование</h2> <h3>КАЗ-Д-15-218/06</h3> <h4>— неактивный документ</h4></div>
-			<div class="header__leng leng_switcher"><button class="leng_switcher__button leng_switcher__button--active">EN</button> | <button class="leng_switcher__button">RU</button></div>
+			<div class="header__description">
+				<span class="header1">Карточка договора</span>  
+				<span class="header2">— редактирование</span> 
+				<span class="header3">КАЗ-Д-15-218/06</span> 
+				<span class="header4">— неактивный документ</span>
+			</div>
+			<div class="header__leng leng_switcher"><button class="leng_switcher__button button button--active">РУС</button> | <button class="leng_switcher__button button">ENG</button></div>
 		</header>
 		<main class="main main--theme">
 			<nav class="navigation navigation_top">
 				<div class="navigation_top__submenu">
 					<ul class="navigation_top__list">
-						<li class="navigation_top__item icon icon--save_as">СОХРАНИТЬ КАК ЧЕРНОВИК</li>
-						<li class="navigation_top__item icon icon--save">СОХРАНИТЬ</li>
-						<li class="navigation_top__item icon icon--make_lists">СФОРМИРОВАТЬ СПИСКИ</li>
-						<li class="navigation_top__item icon icon--cancel">ОТМЕНА</li>
+						<li class="navigation_top__item"><button class="navigation_top__button button button--save_as">СОХРАНИТЬ КАК ЧЕРНОВИК</button></li>
+						<li class="navigation_top__item"><button class="navigation_top__button button button--save">СОХРАНИТЬ</button></li>
+						<li class="navigation_top__item"><button class="navigation_top__button button button--make_lists">СФОРМИРОВАТЬ СПИСКИ</button></li>
+						<li class="navigation_top__item"><button class="navigation_top__button button button--cancel">ОТМЕНА</button></li>
 					</ul>
 				</div>
-				<div class="navigation_top__switcher">Показать все перечни Скрыть все перечни</div>
+				<div class="navigation_top__switcher side_panel__switcher">
+					<button class="button side_panel__button">Показать все перечни</button>
+					<button class="button side_panel__button">Скрыть все перечни</button>
+				</div>
 			</nav>
 			<section class="content">
 				<nav class="navigation navigation_left">
 					<ul class="navigation_left__list">
-						<li class="navigation_left__item navigation_left__item--active">ОСНОВНЫЕ РЕКВИЗИТЫ</li>
-						<li class="navigation_left__item">ЮРИДИЧЕСКОЕ ЛИЦО</li>
-						<li class="navigation_left__item">КОНТРАГЕНТ</li>
-						<li class="navigation_left__item">СТОИМОСТЬ</li>
-						<li class="navigation_left__item">ОТВЕТСТВЕННЫЕ</li>
-						<li class="navigation_left__item">ХАРАКТЕРИСТИКИ ДОГОВОРА</li>
-						<li class="navigation_left__item">ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</li>
-						<li class="navigation_left__item">СПЕЦИАЛЬНЫЕ ПРОЦЕДУРЫ</li>
-						<li class="navigation_left__item">СПИСКИ ПОЛЬЗОВАТЕЛЕЙ</li>
+						<li class="navigation_left__item navigation_left__item--active"><a class="navigation_left__link menu_header" href="#">ОСНОВНЫЕ РЕКВИЗИТЫ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">ЮРИДИЧЕСКОЕ ЛИЦО</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">КОНТРАГЕНТ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">СТОИМОСТЬ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">ОТВЕТСТВЕННЫЕ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">ХАРАКТЕРИСТИКИ ДОГОВОРА</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">СПЕЦИАЛЬНЫЕ ПРОЦЕДУРЫ</a></li>
+						<li class="navigation_left__item"><a class="navigation_left__link menu_header" href="#">СПИСКИ ПОЛЬЗОВАТЕЛЕЙ</a></li>
 					</ul>
 				</nav>
 				<div class="info">
-					<div class="info__description">ОСНОВНЫЕ РЕКВИЗИТЫ</div>
+					<div class="info__description"><span class="menu_header">ОСНОВНЫЕ РЕКВИЗИТЫ</span></div>
 					<div class="info__content">
 						<p>Main</p>
 					</div>
 						
 				</div>
-				<nav class="navigation navigation_right">
-						<ul class="navigation_left__list">
-							<li class="navigation_left__item">ОСНОВНЫЕ РЕКВИЗИТЫ</li>
-							<li class="navigation_left__item">ЮРИДИЧЕСКОЕ ЛИЦО</li>
-							<li class="navigation_left__item">КОНТРАГЕНТ</li>
-							<li class="navigation_left__item">СТОИМОСТЬ</li>
-							<li class="navigation_left__item">ОТВЕТСТВЕННЫЕ</li>
-							<li class="navigation_left__item">ХАРАКТЕРИСТИКИ ДОГОВОРА</li>
-							<li class="navigation_left__item">ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ</li>
-							<li class="navigation_left__item">СПЕЦИАЛЬНЫЕ ПРОЦЕДУРЫ</li>
-							<li class="navigation_left__item">СПИСКИ ПОЛЬЗОВАТЕЛЕЙ</li>
+				<nav class="navigation navigation_right navigation_right--open">
+					<div class="extended_menu">
+						<ul class="extended_menu__list">
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">СОХРАНИТЬ КАК ЧЕРНОВИК</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">СОХРАНИТЬ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">ОТМЕНИТЬ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">ПРОВЕРИТЬ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">ДОБАВИТЬ ФАЙЛ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">СФОРМИРОВАТЬ СПИСКИ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">СКОПИРОВАТЬ ДОКУМЕНТ</a></li>
+							<li class="extended_menu__item"><a class="extended_menu__link menu_header" href="#">УДАЛИТЬ</a></li>
 						</ul>
+					</div>
+
+					<div class="document_status">
+						<h3 class="document_status__header header3">Статус документа</h3>
+						<span class="document_status__status header3">Неактивен</span>
+						<a href="#" class="document_status__link">Изменить</a>
+					</div>
+						
+
 					</nav>
 
 			</section>
