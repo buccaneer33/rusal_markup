@@ -1,0 +1,18 @@
+.add_document_menu{
+  @extend .document_status;
+
+  &__header{
+    @extend .document_status__header;
+  }
+  &__list{
+    @extend .extended_menu__list;
+
+  }
+  &__item{
+    @extend .extended_menu__item;
+  }
+  &__link{
+    @extend .document_status__link;
+  }
+
+}

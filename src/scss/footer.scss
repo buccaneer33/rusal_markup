@@ -1,17 +1,5 @@
 .footer{
 	height: 40px;
+	width: 100%;
 
-  &__wrapper{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		align-items: center;
-		justify-content: space-between;
-	}
-	&__rights{
-	//align-self: flex-start;
-	}
-	&__disigned-by{
-	//align-self: flex-end;
-	}
 }
