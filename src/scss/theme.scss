@@ -100,7 +100,14 @@
 		font-size: 18px;
 	}
 }
-
+.link{
+	&--basic{
+		font-size: 12px;
+    font-weight: 500;
+    color: $text_color--link;
+    text-decoration: none;
+	}
+}
 
 .body--theme{
 	background-color: $bgc--body-bgc;

@@ -12,7 +12,6 @@
     @extend .extended_menu__item;
   }
   &__link{
-    @extend .document_status__link;
     color: $text_color--primary_dark;
   }
 

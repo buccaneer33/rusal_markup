@@ -11,8 +11,4 @@
   &__item{
     @extend .extended_menu__item;
   }
-  &__link{
-    @extend .document_status__link;
-  }
-
 }
