@@ -1,5 +1,5 @@
 .basic_requisites{
-  padding-left: 25px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -11,6 +11,10 @@
     font-size: 12px;
     color: $text_color--secondary_help;
     font-weight: 500;
+    position: relative;
+    &:focus{
+      border-bottom: 1px solid $interface_color--secondary_success;
+    }
   }
   &__value{
     font-size: 12px;
@@ -21,12 +25,14 @@
     width: 60%;
     border: transparent;
     background: transparent;
+    outline:none;
     border-bottom: 1px solid $interface_color--secondary_light;
   }
   &__input{
     width: 70%;
     border: transparent;
     background: transparent;
+    outline:none;
     border-bottom: 1px solid $interface_color--secondary_light;
   }
   &__search{
@@ -86,10 +92,8 @@
   background-color: #ccc;
 }
 .basic_requisites__container input:checked ~ .basic_requisites__checkmark {
- // background-color: $text_color--link;
   border: 2px solid $text_color--link;
- // border: 1px solid #2196F3; 
-}
+  }
 .basic_requisites__checkmark:after {
   content: "";
   display: none;
@@ -97,10 +101,34 @@
 .basic_requisites__container input:checked ~ .basic_requisites__checkmark:after {
   display: block;
   position: absolute;
- // content: "\29BF";
   content: "\25CF";
   color:  $text_color--link;
   font-size: 18px;
-  top: -7.4px;
-  left: -1px;
+  top: -7.1px;
+  left: -0.8px;
+}
+
+.basic_requisites__input:focus{
+  border-bottom: 1px solid $interface_color--secondary_success;
+}
+.basic_requisites__input:focus ~ .basic_requisites__description, .basic_requisites__description:active{
+  color: $interface_color--secondary_success;
+}
+.basic_requisites__selection:focus ~ .basic_requisites__description, .basic_requisites__description:active{
+  color: $interface_color--secondary_success;
+}
+.order--reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.validation--error{
+  color: $text_color--error;
+  border-bottom: 1px solid $text_color--error;
+}
+.validation--error ~ .basic_requisites__description, .basic_requisites__description:active{
+  color: $text_color--error;
+}
+.validation--error:focus{
+  color: $text_color--primary_dark;
+
 }

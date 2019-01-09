@@ -57,17 +57,17 @@
 								<label class="basic_requisites__description">Категория документа *</label><br />
 								<span class="basic_requisites__value">Договоры/Договор</span>
 							</div>
-							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Орг. единица *</label><br />
+							<div class="basic_requisites__item order--reverse">
 								<select class="basic_requisites__selection select select--basic">
 										<option>Русал Глобал Менеджмент 1</option>
 										<option>Русал Глобал Менеджмент 2</option>
 										<option>Русал Глобал Менеджмент 3</option>
 										<option>Русал Глобал Менеджмент 4</option>
 								</select>
+								<label class="basic_requisites__description prompt">Орг. единица *</label>
 							</div>
 							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Смешанный характер *</label><br />
+								<label class="basic_requisites__description prompt">Смешанный характер *</label><br />
 
 									<label class="basic_requisites__container basic_requisites__label">Да
 										<input class="basic_requisites__radio" type="radio" name="mixed" />
@@ -78,50 +78,48 @@
 										<span class="basic_requisites__checkmark"></span>
 									</label>
   						</div>
-							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Вид документа *</label><br />
-								<input class="basic_requisites__input basic_requisites__search" type="search" value="Договор на покупку материалов" />
+							<div class="basic_requisites__item order--reverse">
+								<input class="basic_requisites__input basic_requisites__search" type="search" value="" required />
+								<label class="basic_requisites__description prompt">Вид документа *</label>
 							</div>
-							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Рег. номер *</label><br />
-								<input class="basic_requisites__input"  type="text" value="Договор на покупку материалов" />
+							<div class="basic_requisites__item order--reverse">
+								<input class="basic_requisites__input"  type="text" value="" />
+								<label class="basic_requisites__description prompt">Рег. номер *</label>
 							</div>
-							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Заголовок документа *</label><br />
-								<input class="basic_requisites__input"  type="text" value="Договор на покупку материалов" />
+							<div class="basic_requisites__item order--reverse">
+								<input class="basic_requisites__input validation--error"  type="text" value="" />
+								<label class="basic_requisites__description">Заголовок документа *</label>
 							</div>
-							<div class="basic_requisites__item">
-								<label class="basic_requisites__description">Краткое описание *</label><br />
-								<textarea class="basic_requisites__input">
-
-								</textarea>			
+							<div class="basic_requisites__item order--reverse">
+								<textarea class="basic_requisites__input"></textarea>
+								<label class="basic_requisites__description">Краткое описание *</label>		
 							</div>
-							<div class="basic_requisites__dates">
-									<div class="basic_requisites__dates-item basic_requisites__number_of_contract">
-											<label class="basic_requisites__description">Номер договора (на бумаге) *</label>
+							<div class="basic_requisites__dates ">
+									<div class="basic_requisites__dates-item basic_requisites__number_of_contract order--reverse">
 											<input class="basic_requisites__input"  type="text"/>
+											<label class="basic_requisites__description">Номер договора (на бумаге) *</label>
 									</div>
 									<div class="basic_requisites__dates-item basic_requisites__date_of_document">
 											<label class="basic_requisites__description">Дата документа *</label>
 											<input class="basic_requisites__input datapicker datapicker--basic"  type="date" data-date-inline-picker="true"/>
 									</div>
-									<div class="basic_requisites__dates-item basic_requisites__document_type">
-										<label class="basic_requisites__description">Тип договорного документа *</label>
+									<div class="basic_requisites__dates-item basic_requisites__document_type order--reverse">
 										<select class="basic_requisites__selection select select--basic">
 												<option>15.10.2018</option>
 												<option>15.10.2018</option>
 												<option>15.10.2018</option>
 												<option>15.10.2018</option>
 										</select>
+										<label class="basic_requisites__description">Тип договорного документа *</label>
 									</div>
 									<div class="basic_requisites__dates-item basic_requisites__date_of_begin">
 											<label class="basic_requisites__description">Дата начала действий *</label>
 											<input class="basic_requisites__input datapicker datapicker--basic"  type="date" data-date-inline-picker="true"/>
 										</div>
 
-									<div class="basic_requisites__dates-item basic_requisites__main_contract">
+									<div class="basic_requisites__dates-item basic_requisites__main_contract order--reverse">
+											<input class="basic_requisites__input"  type="text"/>
 										<label class="basic_requisites__description">Основной договор *</label>
-										<input class="basic_requisites__input"  type="text"/>
 									</div>
 									<div class="basic_requisites__dates-item basic_requisites__date_of_finish">
 										<label class="basic_requisites__description">Дата окончания действия *</label>
@@ -161,7 +159,7 @@
 								<label class="basic_requisites__container basic_requisites__label">Не предполагает оплаты, в т.ч. неустоек, потерь, indemnity
 									<input class="basic_requisites__radio" type="radio" name="deal_type" />
 									<span class="basic_requisites__checkmark"></span>
-								</label><br />
+								</label><br />						
 							</div>
 
 						</div>
