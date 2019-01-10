@@ -1,0 +1,31 @@
+.header_leng_switcher{
+  color: $text_color--secondary_help;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &__button{
+    color: $text_color--secondary_help;
+    padding: 5px 8px;
+  }
+  &__divider{
+      width: 0.1rem;
+      height: 1rem;
+      box-sizing: content-box;
+      margin: 0 5px;
+      background-color: $text_color--secondary_help;
+  }
+}
+.button{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+  
+    &--active{
+      color: $text_color--link;
+    }
+}

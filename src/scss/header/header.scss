@@ -1,0 +1,19 @@
+@import "lang_switcher/lang_switcher.scss";
+@import "icons.scss";
+@import "header_logo/header_logo.scss";
+@import "header_description/header_description.scss";
+
+.header{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $interface_color--secondary_light;
+    background-color: $bgc--primary;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+

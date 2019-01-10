@@ -18,43 +18,40 @@ var clientConfig = (function webpackConfig() {
  'use strict';
   var config = Object.assign({});
 
-  config.entry = ['./src/js/index.js','./src/scss/index.scss',];
+  config.entry = ['./src/js/index.js','./src/scss/index.scss'];
   config.output = {path: path.resolve(__dirname,  pathToDist), filename: 'js/main.js'};
   PROD ? config.devtool = '' : config.devtool = 'source-map';
 
   config.module = {
     rules: [
-	/*	{test: /\.js$/,
+  /*{test: /\.js$/,
       exclude: /node_modules/,
       use: {loader: 'babel-loader',
       options: {presets: ['babel-preset-env']}} 
-  	},*/
-			{test: /\.(sa|sc|c)ss$/,
-					include: path.resolve(__dirname, 'src/scss'),
-					use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-						use: [
-							{loader: 'css-loader', options: {url: false,minimize: PROD,sourceMap: DEV}},
-							{loader: 'postcss-loader', options:postCssLoader},
-							{loader: 'sass-loader', options: {sourceMap: DEV}}
-						], publicPath:'./css/'
-					})
-			},
+    },*/
+    {test: /\.(sa|sc|c)ss$/,
+       include: path.resolve(__dirname, 'src/scss'),
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+            use: [
+              {loader: 'css-loader', options: {url: false,minimize: PROD,sourceMap: DEV}},
+              {loader: 'postcss-loader', options:postCssLoader},
+              {loader: 'sass-loader', options: {sourceMap: DEV}}
+              ], publicPath:'./css/'
+          })
+      },
 
-			{test: /\.(png|jpg|gif|svg)$/,
-				use: [
-					{loader: 'file-loader',
-					options: {name: './img/[name].[ext]',
-					context: path.resolve(__dirname, "./img")}
-					}]
-			},
-			{test: /\.(ttf|eot|woff|woff2)$/,
-				use:
-					{loader: "file-loader",
-				   options: {name: "[name].[ext]",
+    {test: /\.(png|jpg|gif|svg)$/,
+      use: 
+        {loader: 'file-loader', options: {name: './img/[name].[ext]',
+          context: path.resolve(__dirname, "./img")}
+          }
+      },
+    {test: /\.(ttf|eot|woff|woff2)$/,
+      use:
+        {loader: "file-loader", options: {name: "[name].[ext]",
            context: path.resolve(__dirname, "./fonts")}}
-      }
-    ]
+      }]
   }
  config.resolve = {};
 
