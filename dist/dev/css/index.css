@@ -1,24 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic);.header1 {
-  font-weight: 500;
-  font-size: 20px;
-  color: #47A3D5; }
-
-.header2 {
-  font-weight: 400;
-  font-size: 20px;
-  color: #47A3D5; }
-
-.header3 {
-  font-weight: 500;
-  font-size: 16px;
-  color: #141414; }
-
-.header4 {
-  font-weight: 400;
-  font-size: 16px;
-  color: #141414; }
-
-.section_header {
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic);.section_header {
   font-weight: 500;
   font-size: 14px;
   color: #141414; }
@@ -59,12 +39,6 @@
   font-weight: 500;
   color: #47A3D5;
   text-decoration: none; }
-
-.main--theme {
-  background-color: white; }
-
-.footer--theme {
-  background-color: white; }
 
 .body {
   font-family: 'Roboto', sans-serif;
@@ -199,9 +173,72 @@
   height: 40px;
   width: 100%; }
 
+.navigation_top {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 48px;
+  width: 100%;
+  padding: 16px 16px 8px 40px;
+  border-bottom: 1px solid #ebebeb; }
+  .navigation_top_menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .navigation_top_menu__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      font-size: 1.2rem;
+      padding: 0;
+      margin: 0; }
+    .navigation_top_menu__item {
+      list-style-type: none;
+      padding: 0 5px 0 0; }
+    .navigation_top_menu__button {
+      color: #141414;
+      padding-left: 12px;
+      padding-right: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      background-color: transparent;
+      margin-right: 1rem;
+      border: transparent;
+      text-transform: uppercase; }
+      .navigation_top_menu__button--save, .navigation_top_menu__button--save_as, .navigation_top_menu__button--make_lists, .navigation_top_menu__button--cancel {
+        position: relative; }
+        .navigation_top_menu__button--save::before, .navigation_top_menu__button--save_as::before, .navigation_top_menu__button--make_lists::before, .navigation_top_menu__button--cancel::before {
+          position: absolute;
+          top: 2px;
+          left: 0px;
+          color: #3480c3;
+          display: block;
+          content: '';
+          background-image: url("../img/save.svg");
+          background-size: 10px 10px;
+          height: 10px;
+          width: 10px; }
+      .navigation_top_menu__button--save_as::before {
+        background-image: url("../img/save-as.svg"); }
+      .navigation_top_menu__button--make_lists::before {
+        background-image: url("../img/group.svg"); }
+      .navigation_top_menu__button--cancel::before {
+        background-image: url("../img/undo.svg"); }
+  .navigation_top__switcher {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; }
+
 .main {
   width: 100%;
   flex-grow: 1;
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -210,36 +247,6 @@
 
 .navigation {
   box-sizing: border-box; }
-  .navigation_top {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 48px;
-    width: 100%;
-    padding: 16px 16px 8px 40px;
-    border-bottom: 1px solid #ebebeb; }
-    .navigation_top__submenu {
-      flex-grow: 1; }
-    .navigation_top__switcher {
-      font-size: 12px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center; }
-    .navigation_top__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      font-size: 12px;
-      padding: 0; }
-    .navigation_top__item {
-      list-style-type: none;
-      padding: 0 5px 0 0; }
-    .navigation_top__button {
-      color: #141414;
-      font-size: 11px;
-      font-weight: 600; }
   .navigation_left {
     width: 272px;
     font-size: 12px; }
@@ -316,50 +323,6 @@
   background-color: transparent; }
   .button--active {
     color: #47A3D5; }
-  .button--save {
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative; }
-    .button--save::before {
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\2611";
-      display: block;
-      color: #3480c3; }
-  .button--save_as {
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative; }
-    .button--save_as::before {
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\2752";
-      display: block;
-      color: #3480c3; }
-  .button--make_lists {
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative; }
-    .button--make_lists::before {
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\2630";
-      display: block;
-      color: #3480c3; }
-  .button--cancel {
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative; }
-    .button--cancel::before {
-      top: 4px;
-      left: 0px;
-      position: absolute;
-      content: "\21B6";
-      display: block;
-      color: #3480c3; }
 
 .side_panel__button {
   font-weight: 600;

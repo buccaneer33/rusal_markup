@@ -1,45 +1,6 @@
 .navigation{
   box-sizing: border-box;
 
-  &_top{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    height: 48px;
-    width: 100%;
-    padding: 16px 16px 8px 40px;
-    border-bottom: 1px solid $interface_color--secondary_light;
-
-    &__submenu{
-      flex-grow: 1;
-    }
-    &__switcher{
-      font-size: 12px; 
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
-
-    }
-    &__list{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      font-size: 12px;
-      padding: 0;
-    }
-    &__item{
-      list-style-type: none;
-      padding: 0 5px 0 0;
-    }
-    &__button{
-      color: $text_color--primary_dark;
-      font-size: 11px;
-      font-weight: 600;
-    }
-  }
   &_left{
     width: 272px;
     font-size: 12px;

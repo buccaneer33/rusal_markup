@@ -7,56 +7,5 @@
   &--active{
     color: $text_color--link;
   }
-  &--save{
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative;
-    &::before{
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\02611";
-      display: block;
-      color: #3480c3;
-    }
-  }
-  &--save_as{
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative;
-    &::before{
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\02752";
-      display: block;
-      color: #3480c3;
-    }
-  }
-  &--make_lists{
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative;
-    &::before{
-      top: 3px;
-      left: 0px;
-      position: absolute;
-      content: "\02630";
-      display: block;
-      color: #3480c3;
-    }
-  }
-  &--cancel{
-    padding-left: 15px;
-    padding-right: 20px;
-    position: relative;
-    &::before{
-      top: 4px;
-      left: 0px;
-      position: absolute;
-      content: "\021B6";
-      display: block;
-      color: #3480c3;
-    }
-  }
+
 }

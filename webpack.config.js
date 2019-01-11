@@ -53,24 +53,30 @@ var clientConfig = (function webpackConfig() {
            context: path.resolve(__dirname, "./fonts")}}
       }]
   }
- config.resolve = {};
+config.resolve = {};
 
-  config.plugins = [
+config.plugins = [
     new ExtractTextPlugin({
       filename:'./css/index.css',
       allChunks: true,
     }),
     new HtmlWebpackPlugin({
-      files: {
-          "css": [ "index.css" ],
-      "js" : [ "js/main.js"],
-      "chunks": {"head": {"entry": "",  "css": [ "css/index.css" ]},
-                 "main": {"entry": "js/main.js", "css": []}},
-      },
+        title: 'Rusal Markup',
+        'meta': {
+            'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+          },
+        files: {
+            "css": [ "index.css" ],
+            "js": [ "js/main.js"],
+            "chunks": {
+                "head": {"entry": "",  "css": [ "css/index.css" ]},
+                "main": {"entry": "js/main.js", "css": []}
+            },
+        },
 
       minify: {collapseWhitespace: true},
       filename: 'index.html',
-    template: './src/html/template/index.html'
+      template: './src/html/template/index.html'
         }),
 
   ]

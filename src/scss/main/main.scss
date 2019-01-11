@@ -1,0 +1,12 @@
+@import "navigation_top/navigation_top.scss";
+.main{
+    width: 100%;
+    flex-grow: 1;
+    background-color: $bgc--primary;
+    ////
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}

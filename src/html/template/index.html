@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title><%= htmlWebpackPlugin.options.title %></title>
         <!--[if lt IE 10]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
         <body class="body body--theme">
@@ -23,14 +23,22 @@
                         <button class="header_leng_switcher__button button">ENG</button>
                     </div>
                 </header>
-                <main class="main main--theme">
-                    <nav class="navigation navigation_top">
-                        <div class="navigation_top__submenu">
-                            <ul class="navigation_top__list">
-                                <li class="navigation_top__item"><button class="navigation_top__button button button--save_as">СОХРАНИТЬ КАК ЧЕРНОВИК</button></li>
-                                <li class="navigation_top__item"><button class="navigation_top__button button button--save">СОХРАНИТЬ</button></li>
-                                <li class="navigation_top__item"><button class="navigation_top__button button button--make_lists">СФОРМИРОВАТЬ СПИСКИ</button></li>
-                                <li class="navigation_top__item"><button class="navigation_top__button button button--cancel">ОТМЕНА</button></li>
+                <main class="main">
+                    <nav class="navigation_top">
+                        <div class="navigation_top_menu">
+                            <ul class="navigation_top_menu__list">
+                                <li class="navigation_top_menu__item">
+                                    <button class="navigation_top_menu__button navigation_top_menu__button--save_as">сохранить как черновик</button>
+                                </li>
+                                <li class="navigation_top_menu__item">
+                                    <button class="navigation_top_menu__button navigation_top_menu__button--save">сохранить</button>
+                                </li>
+                                <li class="navigation_top_menu__item">
+                                    <button class="navigation_top_menu__button navigation_top_menu__button--make_lists">сформировать списки</button>
+                                </li>
+                                <li class="navigation_top_menu__item">
+                                    <button class="navigation_top_menu__button navigation_top_menu__button--cancel">отмена</button>
+                                </li>
                             </ul>
                         </div>
                         <div class="navigation_top__switcher side_panel__switcher">
