@@ -1,0 +1,9 @@
+@import "navigation_right-theme.scss";
+
+.navigation_right{
+    box-sizing: border-box;
+    width: 0px;
+    height: 100%;
+    transition: 0.5s; 
+    overflow: hidden;
+}

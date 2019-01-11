@@ -1,0 +1,13 @@
+.navigation_left--theme{
+    min-width: 272px;
+    font-size: 1em;
+    background-color: $bgc--primary;
+}
+.navigation_left__link--theme{
+    color: $text_color--primary_dark;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.navigation_left__item--active{
+    background-color: $bgc--secondary-hover;
+}

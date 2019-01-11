@@ -1,6 +1,8 @@
+@import "navigation_left/navigation_left.scss";
+@import "navigation_right/navigation_right.scss";
+
 .content{
   width: 100%;
-  // padding: 0 40px;
   flex-grow: 1;
   box-sizing: border-box;
   display: flex;
