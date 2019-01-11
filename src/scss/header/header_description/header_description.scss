@@ -1,3 +1,5 @@
+@import "header_description-theme.scss";
+
 .header_description{
     flex-grow: 1;
     display: flex;
@@ -5,33 +7,4 @@
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: flex-start;
-
-    &__document_description{
-        margin: 0;
-        padding: 0 5px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        color:$text_color--link;
-    }
-    &__document_action{
-        margin: 0;
-        padding: 0 5px;
-        font-size: 1.3rem;
-        font-weight: 400;
-        color:$text_color--link;
-    }
-    &__document_number{
-        margin: 0;
-        padding: 0 5px;
-        font-size: 1.0rem;
-        font-weight: 500;
-    }
-    &__document_status{
-        margin: 0;
-        padding: 0 5px;
-        font-size: 1.0rem;
-        font-weight: 400;
-    }
-
-
 }
