@@ -6,11 +6,9 @@
   }
   &__list{
     @extend .extended_menu__list;
+  }
+  &__link{
+    @extend .document_status__link;
 
   }
-  &__status{
-    @extend .document_status__status;
-
-  }
-
 }

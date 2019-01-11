@@ -1,0 +1,15 @@
+.select{
+    &--basic{
+        border: transparent;
+        background: transparent;
+        outline:none;
+        border-bottom: 1px solid $interface_color--secondary_light;
+        background: transparent;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        padding-right: 20px;
+        background: url('../img/triangle.svg') no-repeat right;
+        background-size: 20px;
+    }
+}

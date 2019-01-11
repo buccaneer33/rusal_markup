@@ -6,19 +6,9 @@
 @import "footer.scss";
 @import "main/main.scss";
 
+@import "helpers/button.scss";
+@import "helpers/select.scss";
+@import "helpers/datapicker.scss";
+@import "helpers/prompt.scss";
 
-@import "nav.scss";
-
-@import "info.scss";
-@import "button.scss";
-@import "side_panel.scss";
-@import "extended_menu.scss";
-@import "document_status.scss";
-@import "contractor.scss";
-@import "add_document_menu.scss";
-@import "document_reports.scss";
-@import "support.scss";
 @import "basic_requisites.scss";
-@import "select.scss";
-@import "datapicker.scss";
-@import "prompt.scss";

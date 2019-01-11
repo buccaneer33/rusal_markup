@@ -1,0 +1,18 @@
+.document_status{
+  padding-bottom: 15px;
+
+    &__header{
+        font-size: 12px;
+        font-weight: 500;
+        color: $text_color--description;
+    }
+    &__status{
+        font-size: 12px;
+        font-weight: 500;
+        color: $text_color--secondary_inactive;
+    }
+    &__link{
+        @extend .extended_menu__link;
+    }
+
+}
