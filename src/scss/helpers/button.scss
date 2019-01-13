@@ -1,8 +1,8 @@
 .button{
   position: relative;
-  border: none;
-  padding: 5px 2px;
+  border: transparent;
   background-color: transparent;
+  cursor: pointer;
 
   &--active{
     color: $text_color--link;

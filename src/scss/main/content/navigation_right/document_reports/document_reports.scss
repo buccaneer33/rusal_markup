@@ -1,15 +1,15 @@
-.document_reports{
-  @extend .document_status;
+.document-reports{
+  @extend .document-status;
 
   &__header{
-    @extend .document_status__header;
+    @extend .document-status__header;
   }
   &__list{
-    @extend .extended_menu__list;
+    @extend .extended-menu__list;
 
   }
   &__item{
-    @extend .extended_menu__item;
+    @extend .extended-menu__item;
   }
   &__link{
     color: $text_color--primary_dark;

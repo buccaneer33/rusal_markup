@@ -1,4 +1,4 @@
-.document_status{
+.document-status{
   padding-bottom: 15px;
 
     &__header{
@@ -12,7 +12,7 @@
         color: $text_color--secondary_inactive;
     }
     &__link{
-        @extend .extended_menu__link;
+        @extend .extended-menu__link;
     }
 
 }

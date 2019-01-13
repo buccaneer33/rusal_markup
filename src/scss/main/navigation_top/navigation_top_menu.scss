@@ -1,8 +1,9 @@
-.navigation_top_menu{
+.top-menu{
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     &__list{
         display: flex;
         flex-direction: row;
@@ -28,38 +29,39 @@
         cursor: pointer;
 
         &--save{
-            position: relative; 
+            position: relative;
+            padding-left: 15px;
             &::before{
                 position: absolute;
-                top: 2px;
+                top: 0px;
                 left: 0px;
                 color: #3480c3;
                 display: block;
                 content: '';
                 background-image: url('../img/save.svg');
-                background-size: 10px 10px;
-                height: 10px;
-                width: 10px;
+                background-size: 12px 12px;
+                height: 12px;
+                width: 12px;
             }
           }
           &--save_as{
-            @extend .navigation_top_menu__button--save; 
+            @extend .top-menu__button--save; 
                 &::before{
-                @extend .navigation_top_menu__button--save::before;
+                @extend .top-menu__button--save::before;
                 background-image: url('../img/save-as.svg');
             }
           }
           &--make_lists{
-            @extend .navigation_top_menu__button--save; 
+            @extend .top-menu__button--save; 
             &::before{
-                @extend .navigation_top_menu__button--save::before;
+                @extend .top-menu__button--save::before;
                 background-image: url('../img/group.svg');
             }
           }
           &--cancel{
-            @extend .navigation_top_menu__button--save; 
+            @extend .top-menu__button--save; 
             &::before{
-                @extend .navigation_top_menu__button--save::before;
+                @extend .top-menu__button--save::before;
                 background-image: url('../img/undo.svg');
             }
         }

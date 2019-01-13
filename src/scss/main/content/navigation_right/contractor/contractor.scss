@@ -1,14 +1,14 @@
 .contractor{
-  @extend .document_status;
+  @extend .document-status;
 
   &__header{
-    @extend .document_status__header;
+    @extend .document-status__header;
   }
   &__status{
-    @extend .document_status__status;
+    @extend .document-status__status;
   }
   &__link{
-    @extend .document_status__link;
+    @extend .document-status__link;
   }
 
 }

@@ -1,4 +1,4 @@
-.right_menu_switcher{
+.menu-switcher{
     font-size: 1.0em; 
     display: flex;
     flex-direction: row;
@@ -7,10 +7,12 @@
     justify-content: center;
 
     &__button{
-        border: transparent;
-        background-color: $bgc--primary;
         font-size: 0.7em;
-        color: $text_color--secondary_inactive;
         font-weight: 600;
+
+        &--theme{
+            color: $text_color--description;
+        }
     }
+
   }

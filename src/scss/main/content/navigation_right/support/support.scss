@@ -1,14 +1,16 @@
 .support{
-  @extend .document_status;
+  @extend .document-status;
 
   &__header{
-    @extend .document_status__header;
+    @extend .document-status__header;
   }
   &__list{
-    @extend .extended_menu__list;
+    @extend .extended-menu__list;
+  }
+  &__item{
+    @extend .extended-menu__item;
   }
   &__link{
-    @extend .document_status__link;
-
+    @extend .document-status__link;
   }
 }

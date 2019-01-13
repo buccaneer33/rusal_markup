@@ -1,28 +1,25 @@
-.header_description{
-    font-size: 1em;
-    &--name{
+.header-description{
+    
+    &--theme-name{
         margin: 0;
         padding: 0 5px;
         font-size: 1.2em;
         font-weight: 500;
         color:$text_color--link;
     }
-    &--action{
-        @extend .header_description--name;
+    &--theme-action{
+        @extend .header-description--theme-name;
         font-weight: 400;
-
     }
-    &--number{
-        @extend .header_description--name;
+    &--theme-number{
+        @extend .header-description--theme-name;
         font-size: 0.9em;
         color:$text_color--primary_dark;
-
     }
-    &--status{
-        @extend .header_description--name;
+    &--theme-status{
+        @extend .header-description--theme-name;
         font-weight: 400;
         font-size: 1.0em;
         color:$text_color--primary_dark;
-
     }
 }
