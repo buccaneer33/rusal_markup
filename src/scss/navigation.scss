@@ -37,14 +37,14 @@
     @include element (icon) {
         
         @include modif (done) {
-            background-image: url(assets/icons/validation_done.svg);
+            background-image: url(../../../assets/icons/validation_done.svg);
             @include main-icon;
             width: 12px;
             height: 12px;
         }
 
         @include modif (error) {
-            background-image: url(assets/icons/validation_error.svg);
+            background-image: url(../../../assets/icons/validation_error.svg);
             @include main-icon;
             width: 12px;
             height: 13px;

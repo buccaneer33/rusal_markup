@@ -18,13 +18,13 @@
     @include element (icon) {
 
         @include modif (down) {
-            background-image: url(assets/icons/ic_down.svg);
+            background-image: url(../../../assets/icons/ic_down.svg);
             @include main-icon;
             margin-left: 16px;
         }
 
         @include modif (up) {
-            background-image: url(assets/icons/ic_down.svg);
+            background-image: url(../../../assets/icons/ic_down.svg);
             transform: rotate(180deg);
             @include main-icon;
             margin-left: 16px;

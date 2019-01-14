@@ -33,22 +33,22 @@
         
         @include modif (draft-save) {
             @include action-icon;
-            background-image: url(assets/icons/draft.svg);
+            background-image: url(../../../assets/icons/draft.svg);
         }
 
         @include modif (save) {
             @include action-icon;
-            background-image: url(assets/icons/save.svg); 
+            background-image: url(../../../assets/icons/save.svg); 
         }
 
         @include modif (form-lists) {
             @include action-icon;
-            background-image: url(assets/icons/group.svg);
+            background-image: url(../../../assets/icons/group.svg);
         }
 
         @include modif (cancel) {
             @include action-icon;
-            background-image: url(assets/icons/cansel.svg);
+            background-image: url(../../../assets/icons/cansel.svg);
         }
     }
 

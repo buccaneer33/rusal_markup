@@ -89,15 +89,15 @@
     }
 
     @include element (icon) {
-        background-image: url(assets/icons/description.svg);
+        background-image: url(../../../assets/icons/description.svg);
         @include main-icon;
 
         &:hover {
-            background-image: url(assets/icons/description-dark.svg);    
+            background-image: url(../../../assets/icons/description-dark.svg);    
         }
 
         @include modif (show-hint) {
-            background-image: url(assets/icons/description-dark.svg);  
+            background-image: url(../../../assets/icons/description-dark.svg);  
         }
 
         @include modif (for-table) {
@@ -119,7 +119,7 @@
         @include section-text;
 
         @include modif (search) {
-            background: url(assets/icons/ic_search.svg);
+            background: url(../../../assets/icons/ic_search.svg);
             background-size: 15px;
             background-repeat: no-repeat;
             background-position-x: 99%;
@@ -137,7 +137,7 @@
         }
 
         @include modif (date) {
-            background: url(assets/icons/ic_calendar.svg);
+            background: url(../../../assets/icons/ic_calendar.svg);
             background-size: 15px;
             background-repeat: no-repeat;
             background-position-x: 99%;
@@ -265,10 +265,10 @@
 
     @include element (approvers-table-remove-icon) {
         @include main-icon;
-        background-image: url(assets/icons/garbage.svg);
+        background-image: url(../../../assets/icons/garbage.svg);
 
         &:hover {
-            background-image: url(assets/icons/garbage-red.svg); 
+            background-image: url(../../../assets/icons/garbage-red.svg); 
         }
     }
     
@@ -302,7 +302,7 @@
         position: absolute;
         top: 8px;
         right: 8px;
-        background-image: url(assets/icons/ic_close.svg);
+        background-image: url(../../../assets/icons/ic_close.svg);
         @include main-icon;
         height: 12px;
         width: 12px;

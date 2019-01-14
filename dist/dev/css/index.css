@@ -120,25 +120,25 @@ a {
     background-size: cover;
     width: 12px;
     height: 12px;
-    background-image: url(assets/icons/draft.svg); }
+    background-image: url(../../../assets/icons/draft.svg); }
   .action-panel__action-icon--save {
     background-repeat: no-repeat;
     background-size: cover;
     width: 12px;
     height: 12px;
-    background-image: url(assets/icons/save.svg); }
+    background-image: url(../../../assets/icons/save.svg); }
   .action-panel__action-icon--form-lists {
     background-repeat: no-repeat;
     background-size: cover;
     width: 12px;
     height: 12px;
-    background-image: url(assets/icons/group.svg); }
+    background-image: url(../../../assets/icons/group.svg); }
   .action-panel__action-icon--cancel {
     background-repeat: no-repeat;
     background-size: cover;
     width: 12px;
     height: 12px;
-    background-image: url(assets/icons/cansel.svg); }
+    background-image: url(../../../assets/icons/cansel.svg); }
   .action-panel__action-name {
     font-family: "Roboto-Regular";
     font-size: 12px;
@@ -203,7 +203,7 @@ a {
       .navigation__item--active:hover {
         background-color: rgba(8, 137, 208, 0.2); }
   .navigation__icon--done {
-    background-image: url(assets/icons/validation_done.svg);
+    background-image: url(../../../assets/icons/validation_done.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;
@@ -212,7 +212,7 @@ a {
     width: 12px;
     height: 12px; }
   .navigation__icon--error {
-    background-image: url(assets/icons/validation_error.svg);
+    background-image: url(../../../assets/icons/validation_error.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;
@@ -305,7 +305,7 @@ a {
       .information__header-text {
         font-family: "Roboto-Medium"; } }
   .information__icon--down {
-    background-image: url(assets/icons/ic_down.svg);
+    background-image: url(../../../assets/icons/ic_down.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;
@@ -313,7 +313,7 @@ a {
     cursor: pointer;
     margin-left: 16px; }
   .information__icon--up {
-    background-image: url(assets/icons/ic_down.svg);
+    background-image: url(../../../assets/icons/ic_down.svg);
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,7 +417,7 @@ a {
   position: absolute;
   top: 50%;
   right: 10px;
-  background-image: url(assets/icons/ic_close.svg);
+  background-image: url(../../../assets/icons/ic_close.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 16px;
@@ -538,7 +538,7 @@ a {
   border: 1px solid #47A3D5;
   border-radius: 0 4px 4px 0;
   background-color: #47A3D5;
-  background-image: url(assets/icons/ic_search-white.svg);
+  background-image: url(../../../assets/icons/ic_search-white.svg);
   background-size: 15px;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -563,7 +563,7 @@ a {
   align-items: center; }
 
 .popup__alphabet-icon--down {
-  background-image: url(assets/icons/ic_down-blue.svg);
+  background-image: url(../../../assets/icons/ic_down-blue.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 16px;
@@ -572,7 +572,7 @@ a {
   margin-left: 16px; }
 
 .popup__alphabet-icon--up {
-  background-image: url(assets/icons/ic_down-blue.svg);
+  background-image: url(../../../assets/icons/ic_down-blue.svg);
   transform: rotate(180deg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -688,7 +688,7 @@ a {
   margin-right: 3px;
   position: absolute;
   left: -16px;
-  background-image: url(assets/icons/ic_down-blue.svg); }
+  background-image: url(../../../assets/icons/ic_down-blue.svg); }
 
 .popup__message {
   margin-left: 10px;
@@ -769,16 +769,16 @@ a {
     .content-section__input-form--no-icon {
       margin-left: 16px; }
   .content-section__icon {
-    background-image: url(assets/icons/description.svg);
+    background-image: url(../../../assets/icons/description.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;
     width: 16px;
     cursor: pointer; }
     .content-section__icon:hover {
-      background-image: url(assets/icons/description-dark.svg); }
+      background-image: url(../../../assets/icons/description-dark.svg); }
     .content-section__icon--show-hint {
-      background-image: url(assets/icons/description-dark.svg); }
+      background-image: url(../../../assets/icons/description-dark.svg); }
     .content-section__icon--for-table {
       position: absolute;
       left: -30px; }
@@ -814,7 +814,7 @@ a {
       .content-section__input {
         font-family: "Roboto-Medium"; } }
     .content-section__input--search {
-      background: url(assets/icons/ic_search.svg);
+      background: url(../../../assets/icons/ic_search.svg);
       background-size: 15px;
       background-repeat: no-repeat;
       background-position-x: 99%;
@@ -828,7 +828,7 @@ a {
         left: 65.5%;
         top: -4px; }
     .content-section__input--date {
-      background: url(assets/icons/ic_calendar.svg);
+      background: url(../../../assets/icons/ic_calendar.svg);
       background-size: 15px;
       background-repeat: no-repeat;
       background-position-x: 99%;
@@ -952,9 +952,9 @@ a {
     height: 16px;
     width: 16px;
     cursor: pointer;
-    background-image: url(assets/icons/garbage.svg); }
+    background-image: url(../../../assets/icons/garbage.svg); }
     .content-section__approvers-table-remove-icon:hover {
-      background-image: url(assets/icons/garbage-red.svg); }
+      background-image: url(../../../assets/icons/garbage-red.svg); }
   .content-section__material-icon.mat-icon-button {
     width: 24px;
     height: 24px;
@@ -980,7 +980,7 @@ a {
     position: absolute;
     top: 8px;
     right: 8px;
-    background-image: url(assets/icons/ic_close.svg);
+    background-image: url(../../../assets/icons/ic_close.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;
