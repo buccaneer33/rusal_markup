@@ -1,0 +1,40 @@
+.right-menu {
+    width: 240px;
+    padding-left: 16px;
+
+    @include element (action) {
+        display: flex;
+        align-items: center;
+        width: 224px;
+        height: 32px;
+        @include text-button;
+    }
+
+    @include element (title) {
+        margin-top: 30px;
+        width: 174px;
+        padding-right: 50px;
+        @include title;
+    }
+
+    @include element (data) {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        font-family: "Roboto-Regular";
+        font-size: 12px;
+        line-height: 16px;
+        color:  #737576;
+    }
+
+    @include element (report) {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        font-family: "Roboto-Regular";
+        font-size: 14px;
+        line-height: 20px;
+        color: $main-text;
+        cursor: pointer;
+    }
+}

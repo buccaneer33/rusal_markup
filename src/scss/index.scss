@@ -1,14 +1,16 @@
+@import "mixins.scss";
+//@import "fonts.scss";
 @import "variables.scss";
-@import "fonts.scss";
-@import "theme.scss";
-@import "body.scss";
-@import "header/header.scss";
-@import "footer.scss";
-@import "main/main.scss";
 
-@import "helpers/button.scss";
-@import "helpers/select.scss";
-@import "helpers/datapicker.scss";
-@import "helpers/prompt.scss";
+@import "main-style.scss";
+@import "header.scss";
+@import "action-panel.scss";
+@import "content-wrapper.scss";
+@import "navigation.scss";
+@import "content.scss";
+@import "right-menu.scss";
+@import "information.scss";
+@import "error-message.scss";
+@import "popup.scss";
 
-@import "basic_requisites.scss";
+@import "content-section.scss";

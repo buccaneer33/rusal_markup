@@ -1,0 +1,153 @@
+@mixin element ($element) {
+    &__#{$element} {
+      @content;
+    };
+  };
+  
+  @mixin modif ($modif) {
+    &--#{$modif} {
+      @content;
+    };
+  };
+  
+  @mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+  };
+
+  @mixin header1 {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 20px;
+    line-height: 24px;
+    color: #47A3D5;
+  }
+
+  @mixin header2 {
+    font-family: "Roboto-Regular";
+    font-size: 20px;
+    line-height: 24px;
+    color: #47A3D5;
+  }
+
+  @mixin header3 {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  @mixin header4 {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  @mixin navigation-item {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  
+  @mixin text-button {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 12px;
+    line-height: 16px;
+    color: #47A3D5;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  @mixin title {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 11px;
+    line-height: 16px;
+    color: #999A9A;
+    text-transform: uppercase;
+  }
+  
+  @mixin action-name {
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #141414;
+  }
+
+  @mixin action-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+  }
+
+  @mixin view-action {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 16px;
+    color: #787878;
+  }
+
+  @mixin section-header {
+    font-family: "Roboto-Bold";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  @mixin section-title {
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+    line-height: 16px;
+    color: #737576;
+  }
+
+  @mixin section-text {
+    font-family: "Roboto-Medium";
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-family: "Roboto-Medium";
+    }
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  @mixin main-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16px;
+    width: 16px;
+    cursor: pointer; 
+  }
+
+  @mixin placeholder-text {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    line-height: 16px;
+    color: #737576;
+  }

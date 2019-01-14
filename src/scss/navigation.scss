@@ -1,0 +1,63 @@
+.navigation {
+    width: 252px;
+    height: 100%;
+    // position: fixed;
+    // z-index: 2;
+    // top: $header-height + $action-panel-height;
+
+    /* fix for IE 10+ */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        width: 291px;
+    }
+
+    @include modif (has-error) {
+        top: $header-height + $action-panel-height + 74px;
+    }
+
+    @include element (item) {
+        display: flex;
+        align-items: center;
+        width: 231px;
+        height: 32px;
+        padding-left: $navigation-left-indent - 18px;
+        @include navigation-item;
+        cursor: pointer;
+        &:hover {
+            background-color: $hover-background-color;
+        }
+
+        @include modif (active) {
+            background-color: $active-background-color;
+            &:hover {
+                background-color: $active-background-color;
+            }
+        }
+    }
+
+    @include element (icon) {
+        
+        @include modif (done) {
+            background-image: url(assets/icons/validation_done.svg);
+            @include main-icon;
+            width: 12px;
+            height: 12px;
+        }
+
+        @include modif (error) {
+            background-image: url(assets/icons/validation_error.svg);
+            @include main-icon;
+            width: 12px;
+            height: 13px;
+        }
+
+        @include modif (none) {
+            @include main-icon;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    @include element (item-text) {
+        margin-left: 8px;
+    }
+}

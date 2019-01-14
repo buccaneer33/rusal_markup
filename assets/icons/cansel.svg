@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/cansel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon/cansel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="left-return-arrow" transform="translate(1.000000, 0.000000)" fill="#2BA1D8" fill-rule="nonzero">
+            <path d="M7.87003564,13.0812374 L7.87003564,16 C11.3150926,16 14.1176471,13.1920044 14.1176471,9.7403487 C14.1176471,6.28891189 11.3150926,3.48091631 7.87003564,3.48091631 L5.57648697,3.48091631 L6.99069147,2.06400299 L4.93085288,0 L0,4.94022465 L4.93078005,9.88030337 L6.99061864,7.81644632 L5.57648697,6.39960597 L7.87003564,6.39960597 C9.70869084,6.39960597 11.2044645,7.89824464 11.2044645,9.7403487 C11.2044645,11.5823798 9.70869084,13.0812374 7.87003564,13.0812374 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

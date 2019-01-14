@@ -1,0 +1,82 @@
+.action-panel {
+    display: flex;
+    width: 100%;
+    height: $action-panel-height;
+    border-bottom: $border;
+    background: $main-background-color;
+    // position: fixed;
+    // z-index: 2;
+    // top: $header-height + 1px;
+    
+
+    @include element (actions-wrapper) {
+        display: flex;
+        align-items: center;
+        margin-top: 18px;
+        margin-left: 40px;
+    }
+
+    @include element (action) {
+        display: flex;
+        align-items: baseline;
+        margin-left: 32px;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &[disabled="true"]{
+            opacity:0.5;
+        }
+    }
+
+    @include element (action-icon) {
+        
+        @include modif (draft-save) {
+            @include action-icon;
+            background-image: url(assets/icons/draft.svg);
+        }
+
+        @include modif (save) {
+            @include action-icon;
+            background-image: url(assets/icons/save.svg); 
+        }
+
+        @include modif (form-lists) {
+            @include action-icon;
+            background-image: url(assets/icons/group.svg);
+        }
+
+        @include modif (cancel) {
+            @include action-icon;
+            background-image: url(assets/icons/cansel.svg);
+        }
+    }
+
+    @include element (action-name) {
+        @include action-name;
+        margin-left: 6px;
+        cursor: pointer;
+        &:hover {
+            color: $active-link;
+        }
+    }
+
+    @include element (view-wrapper) {
+        display: flex;
+        align-items: baseline;
+        margin: 18px 20px 0 auto;
+
+        @include modif (for-title) {
+            margin-right: 260px;
+        }
+    }
+
+    @include element (view-action) {
+        @include view-action;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            color: $main-text;
+        }
+    }
+}

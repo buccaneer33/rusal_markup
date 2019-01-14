@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $header-height;
+    border-bottom: $border;
+    background: $main-background-color;
+    // position: fixed;
+    // z-index: 2;
+    // top: 0;
+
+    @include element (icon) {
+        background-image: url(../../../assets/icons/ic_logo.svg);
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+    }
+
+    @include element (text-wrapper) {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    @include element (title) {
+        @include header1;
+        margin-left: 22px;
+    }
+
+    @include element (title-action) {
+        @include header2;
+        margin-left: 6px;
+    }
+
+    @include element (document) {
+        @include header3;
+        margin-left: 10px;
+
+        @include modif (for-title) {
+            margin-left: 0;
+        }
+    }
+
+    @include element (document-status) {
+        @include header4;
+        line-height: 22px;
+        margin-left: 3px;
+    }
+
+    @include element (language-wrapper) {
+        display: flex;
+        flex-direction: row;
+        margin: 0 20px 0 auto;
+    }
+
+    @include element (language) {
+        @include header1;
+        color: $main-text;
+        height: 22px;
+        width: 40px;
+        text-align: center;
+        padding: 0 5px;
+        font-size: 16px;	
+        font-weight: 600;	
+        line-height: 22px;
+        /* cursor: pointer; */
+        &:first-child {
+            border-right: $border;
+        }  
+        
+        @include modif (active) {
+            color: $active-link;
+        }
+    }
+}

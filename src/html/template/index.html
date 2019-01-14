@@ -5,22 +5,19 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
         <!--[if lt IE 10]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     </head>
-        <body class="body body--theme">
-            <div class="body__wrapper body__wrapper--theme">
-                <header class="header header--theme">
-                    <div class="header-logo header-logo--theme">
-                        <img class="header-logo__img" src="img/logo.png" />
-                    </div>
-                    <div class="header-description">
-                        <span class="header-description--theme-name">Карточка договора</span>  
-                        <span class="header-description--theme-action">— редактирование</span> 
-                        <span class="header-description--theme-number">КАЗ-Д-15-218/06</span> 
-                        <span class="header-description--theme-status">— неактивный документ</span>
-                    </div>
-                    <div class="leng-switcher header__leng-switcher">
-                        <button class="button leng-switcher__button leng-switcher__button--active">рус</button>
-                        <div class="leng-switcher__divider"></div>
-                        <button class="button leng-switcher__button">eng</button>
+        <body>
+            <div class="main-wrapper">
+                <header class="header">
+                        <div class="header__icon"></div>
+
+                        <div class="header__title">Карточка договора</div>  
+                        <div class="header__title-action">— редактирование</div> 
+                        <div class="header__document">КАЗ-Д-15-218/06</div> 
+                        <div class="header__document-status">— неактивный документ</div>
+
+                    <div class="header__language-wrapper">
+                        <div class="header__language header__language--active">рус</div>
+                        <div class="header__language">eng</div>
                     </div>
                 </header>
                 <main class="main main--theme">

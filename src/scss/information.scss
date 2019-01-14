@@ -1,0 +1,54 @@
+.information {
+    width: 100%;
+    padding: 8px 0px;
+    border-bottom: $border;
+    
+    @include element (header) {
+        display: flex;
+        align-items: center;
+        height: 32px;
+    }
+
+    @include element (header-text) {
+        @include navigation-item;
+        margin-left: 8px;
+
+    }
+
+    @include element (icon) {
+
+        @include modif (down) {
+            background-image: url(assets/icons/ic_down.svg);
+            @include main-icon;
+            margin-left: 16px;
+        }
+
+        @include modif (up) {
+            background-image: url(assets/icons/ic_down.svg);
+            transform: rotate(180deg);
+            @include main-icon;
+            margin-left: 16px;
+        }
+    }
+
+    @include element (messages-wrapper) {
+        max-height: 120px;
+        overflow-y: auto;
+        margin-bottom: 5px;
+    }
+
+    @include element (message) {
+        margin: 4px 8px;
+        padding: 6px 32px;
+        border: 1px solid $active-link;
+        background-color: $active-background-color;
+        @include section-text;
+
+        @include modif (min) {
+            padding-right: 30%;
+            white-space: nowrap; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+        }
+    }
+}

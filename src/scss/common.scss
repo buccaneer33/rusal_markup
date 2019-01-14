@@ -1,0 +1,65 @@
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+*[hidden] {display:none}
+
+.ComplexFields{ margin-left:30px; }
+
+
+.FormSubmitLoadingOverlay{
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    z-index:100;
+    left:0;
+    right:0;
+    
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0, 0.5);
+
+    &__loader{
+        text-align:center;
+    }
+}
+
+
+.content-section__approvers-field-table{
+    max-width: $table-width;
+    width:100%;
+    margin-left: 44px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border: $border;
+    border-collapse: collapse;
+
+    &-header {
+        background: #eee;
+        @include section-text;
+        text-align:left;
+        border-left: $border;
+        padding:8px;
+        text-transform: uppercase;
+        color:  #999A9A;
+    }
+
+    &-person-line {
+
+        &.bordered{
+            & .content-section__approvers-field-table-content {
+                border-top: $border;
+            }
+        }
+    }
+
+    &-content{
+        @include section-text;
+        border-left: $border;
+        padding:8px;
+    }
+
+}

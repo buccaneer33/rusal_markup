@@ -1,0 +1,33 @@
+@import 'variables.scss';
+$mat-rusal-blue: (
+  50: #FF0000,  /*== not used ==*/
+  100: #cfd8dc,
+  200: #b0bec5,
+  300: #90a4ae,
+  400: #FF0000,
+  500: $active-link, /** == selected input color (text & underline) == */
+  600: #546e7a,
+  700: #455a64,
+  800: #37474f, 
+  900: #FF0000,
+  A100: #cfd8dc,
+  A200: $active-link, /** == checkbox and radio color == */
+  A400: #78909c,
+  A700: #455a64,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: #ff0000,
+    A200: #ffff00,
+    A400: #0000FF,
+    A700: $light-primary-text,
+  )
+);

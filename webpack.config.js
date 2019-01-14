@@ -46,12 +46,13 @@ var clientConfig = (function webpackConfig() {
         {loader: 'file-loader', options: {name: './img/[name].[ext]',
           context: path.resolve(__dirname, "./img")}
           }
-      },
+    },
     {test: /\.(ttf|eot|woff|woff2)$/,
       use:
         {loader: "file-loader", options: {name: "[name].[ext]",
            context: path.resolve(__dirname, "./fonts")}}
-      }]
+      }
+    ]
   }
 config.resolve = {};
 
@@ -74,7 +75,7 @@ config.plugins = [
             },
         },
 
-      minify: {collapseWhitespace: true},
+      minify: {collapseWhitespace: false},
       filename: 'index.html',
       template: './src/html/template/index.html'
         }),

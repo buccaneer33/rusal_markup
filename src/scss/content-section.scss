@@ -1,0 +1,367 @@
+.content-section {
+    width: 100%;
+    margin-bottom: 32px;
+
+    @include element (section-wrapper) {
+        &:last-child > div {
+            min-height: 95vh;
+        }
+    }
+
+    @include element (anchor) {
+        margin-top: -110px;
+        padding-top: 110px;
+        content: " ";
+    }
+
+    @include element (anchor-with-error) {
+        margin-top: -180px;
+        padding-top: 180px;
+        content: " ";
+    }
+
+    @include element (header) {
+        width: calc(100%-40px);
+        height: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: $section-left-indent;
+        @include section-header;
+        background-color: $hover-background-color;
+
+        @include modif (active) {
+            background-color: $active-background-color;
+        }
+
+        @include modif (invalid) {
+            background-color: $invalid-background-color;
+        }
+    }
+
+    @include element (input-group) {
+        margin-left: $section-left-form-indent;
+        margin-top: $section-top-form-indent;
+        border: none;
+
+        @include modif (short) {
+            width: 47.3%;
+            margin-top: 12px;
+        }
+    }
+
+    @include element (title-wrapper) {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    @include element (title) {
+        @include section-title;
+        margin-left: 8px;
+        margin-bottom: 6px;
+        
+        @include modif (has-popup) {
+            border-bottom: $border;
+            width: 65%;
+        }
+
+        @include modif (invalid) {
+            color: $invalid-text-color;
+        }
+
+        @include modif (no-icon) {
+            margin-left: 24px;   
+        }
+    }
+
+    @include element (text) {
+        @include section-text;
+    }
+
+    @include element (input-form) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        @include modif (no-icon) {
+            margin-left: $section-left-indent - 24px;
+        }
+    }
+
+    @include element (icon) {
+        background-image: url(assets/icons/description.svg);
+        @include main-icon;
+
+        &:hover {
+            background-image: url(assets/icons/description-dark.svg);    
+        }
+
+        @include modif (show-hint) {
+            background-image: url(assets/icons/description-dark.svg);  
+        }
+
+        @include modif (for-table) {
+            position: absolute;
+            left: -30px;
+            
+        }
+    }
+
+    @include element (selector) {
+        border-bottom: $border;
+    }
+
+    @include element (input) {
+        margin-left: 24px;
+        @include placeholder {
+            @include placeholder-text;
+        }
+        @include section-text;
+
+        @include modif (search) {
+            background: url(assets/icons/ic_search.svg);
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 99%;
+            background-position-y: 50%; 
+            width: 18px;
+            height: 18px;
+            border: none;
+            cursor: pointer;
+
+            @include modif (has-popup) {
+               position: absolute;
+               left: 65.5%;
+               top: -4px;
+            }
+        }
+
+        @include modif (date) {
+            background: url(assets/icons/ic_calendar.svg);
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position-x: 99%;
+            background-position-y: 50%; 
+        }
+
+        @include modif (width50) {
+            width: 45%;
+        }
+
+        @include modif (width65) {
+            width: 65%;
+        }
+
+        @include modif (width100) {
+            width: 95%;
+        }
+    }
+
+    @include element (selector-placeholder) {
+        @include placeholder-text;
+        margin-left: 8px;
+        
+        @include modif (invalid) {
+            color: $invalid-text-color;
+        }
+    }
+
+    @include element (radio-group) {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        @include section-text;
+    }
+
+    @include element (radio) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 6px;
+        @include section-text;
+
+        @include modif (has-icon) {
+            margin-left: -15px;
+        }
+    }
+
+    @include element (form-line-wrapper) {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    @include element (button) {
+        margin-left: 10px;
+        @include text-button;
+    }
+
+    @include element (approvers-table) {
+        max-width: $table-width;
+        margin-left: 44px;
+        margin-top: 8px;
+        margin-right: 10px;
+        border: $border;
+
+        .content-section__title--has-popup{
+            width:100%;
+        }
+
+        .content-section__input--search{
+            left: auto;
+            right:0;
+        }
+    }
+
+    @include element (approvers-table-line) {
+        border-bottom: $border;
+        display: flex;
+        @include section-text;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        @include modif(header) {
+            background-color: $hover-background-color;
+            @include action-name;
+            color: #787878;
+        }
+    }
+
+    @include element (approvers-table-left-column) {
+        width: 15%;
+        border-right: $border;
+        padding: 8px;
+    }
+
+    @include element (approvers-table-right-column) {
+        width: 85%;
+        padding: 8px;
+    }
+
+    @include element (approvers-table-person-line) {
+        display: block;
+        justify-content: space-between;
+        @include section-text;
+        padding: 8px;
+        border-bottom: $border;
+
+        @include element (content) {
+            position: relative;
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+        }
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    @include element (approvers-table-person-name) {
+        width: 98%;
+    }
+
+    @include element (approvers-table-remove-icon) {
+        @include main-icon;
+        background-image: url(assets/icons/garbage.svg);
+
+        &:hover {
+            background-image: url(assets/icons/garbage-red.svg); 
+        }
+    }
+    
+    @include element (material-icon) {
+        &.mat-icon-button {
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            margin: -4px 0;
+
+            .mat-icon{
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    @include element (hint) {
+        position: relative;
+        margin-left: 0;
+        margin-right: $section-left-indent;
+        margin-top: 3px;
+        padding: 1px 20% 1px 8px;
+        background-color: $hover-background-color;
+        @include placeholder-text;
+    }
+
+    @include element (hint-close) {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-image: url(assets/icons/ic_close.svg);
+        @include main-icon;
+        height: 12px;
+        width: 12px;
+    }
+
+    
+
+    @include element (error) {
+        margin-left: $section-left-indent - 16px;
+        @include section-text;
+        color: $invalid-text-color;
+    }
+
+    @include element (check-wrapper) {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 4px;
+        margin-left: 20px;
+
+        @include modif (has-icon) {
+            margin-left: 4px;
+        }
+    }
+
+    @include element (check-label) {
+        margin-left: 8px;
+    }
+
+
+
+    @include element (label) {
+        width: 70%;
+
+        @include modif (checkbox) {
+            font-family: "Roboto-Medium";
+            width: 70%;
+            margin-left: 10px;
+
+            @include modif (has-icon) {
+                margin-left: -4px;
+            }
+        }
+
+        @include modif (underline) {
+            text-decoration: underline;
+        }
+
+    }
+
+    @include element (button-margin) {
+        margin-left: 24px;       
+    }
+
+    @include element (checkbox-margin) {
+        margin-left: 8px;
+        margin-right: 12px;
+    }
+
+    @include element (hint-margin) {
+        margin-left: 40px;
+    }
+}
