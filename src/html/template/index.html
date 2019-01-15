@@ -52,13 +52,93 @@
                 <div class="information">
                         <div class="information__header">
                             <div class="information__icon--up"></div>
-                            <div class="information__header-text">Текст текст текст</div>
+                            <div class="information__header-text">Текст заголовка</div>
                             <div class="content-section__button">Кнопка</div>
                         </div>
                         <div class="information__messages-wrapper">
                             <div class="information__message information__message--min">Сообщение сообщение сообщение</div>
                         </div>
                 </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div>
+                    <div class="navigation__item navigation__item--active">
+                        <div class="navigation__icon--none"></div>
+                        <a class="navigation__item-text">основные реквизиты</a>  
+                    </div>
+                    <div class="navigation__item">
+                        <div class="navigation__icon--done"></div> 
+                        <a class="navigation__item-text">юридическое лицо</a>  
+                    </div>
+                    <div class="navigation__item">
+                        <div class="navigation__icon--done"></div> 
+                        <a class="navigation__item-text">контагент</a>  
+                    </div>
+                    <div class="navigation__item">
+                        <div class="navigation__icon--error"></div>
+                        <a class="navigation__item-text">стоимость</a>  
+                    </div>
+                    <div class="navigation__item">
+                        <div class="navigation__icon--error"></div>
+                        <a class="navigation__item-text">ответственные</a>  
+                    </div>
+                    <div class="navigation__item">
+                        <div class="navigation__icon--none"></div>
+                        <a class="navigation__item-text">характеристики договора</a>  
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <div class="content-section">
+                        <a id="general-requsites"></a>
+                        <div class="content-section__header content-section__header--active">ОСНОВНЫЕ РЕКВИЗИТЫ</div>
+                        <p>описание раздела (если есть)</p>
+                        <!--<app-form-field *ngFor="let field of section?.fields" [field]="form.get( field.name )" [form]="form" class="full-width"></app-form-field> -->
+                   </div>
+                </div>
+
+                <div class="right-menu">
+                    <div class="right-menu__action">сохранить как черновик</div>
+                    <div class="right-menu__action">сохранить</div>
+                    <div class="right-menu__action">отменить</div>
+                    <div class="right-menu__action">проверить</div>
+                    <div class="right-menu__action">добавить файл</div>
+                    <div class="right-menu__action">сформировать списки</div>
+                    <div class="right-menu__action">скопировать документ</div>
+                    <div class="right-menu__action">удалить</div>
+                    <!----->
+                    <div class="right-menu__title">статус доумента</div>
+                    <div class="right-menu__data">Неактивный</div>
+                    <div class="right-menu__action">активитовать</div>
+                    <!---->
+                    <div class="right-menu__title">ответственный за заключение</div>
+                    <div class="right-menu__data">Константинопольский К.К.</div>
+                    <div class="right-menu__action">активитовать</div>
+                    <!---->
+                    <div class="right-menu__title">добавление связанного документа</div>
+                    <div class="right-menu__action">комментарий</div>
+                    <div class="right-menu__action">ссылка на документ</div>
+                    <div class="right-menu__action">подчиненный документ</div>
+                    <div class="right-menu__action">поручение</div>
+                    <div class="right-menu__action">поручение списком</div>
+                    <div class="right-menu__action">уведомление</div>
+                    <!---->
+                    <div class="right-menu__title">отчеты по документу</div>
+                    <div class="right-menu__report">Лист согласования</div>
+                    <div class="right-menu__report">Версии файлов</div>
+                    <div class="right-menu__report">Расчет сумм</div>
+                    <div class="right-menu__report">Все док-ты сделки</div>
+                    <div class="right-menu__report">Сводный лист</div>
+                    <div class="right-menu__report">Связанные документы</div>
+                    <div class="right-menu__report">Акты договора</div>
+                    <div class="right-menu__report">Суммы ИБ по годам</div>
+                    <!---->
+                    <div class="right-menu__title">Помощь</div>
+                    <div class="right-menu__action">запрос администратору</div>
+                </div>
+
             </div>
 
             <div class="main-wrapper">
