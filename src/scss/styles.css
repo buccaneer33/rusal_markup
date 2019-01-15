@@ -1,0 +1,196 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+*/
+body{
+    margin:0; 
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header{
+    height:60px;
+    line-height:60px;
+    display:flex;
+    align-items:center;
+}
+/**
+ * Title
+ */
+.HeaderTitle{
+    color:#47A3D5;
+    line-height:60px;
+    padding:0;
+    margin:0;
+    flex:99%;
+}
+
+.HeaderTitle--MainTitle {
+    font-size: 20px;
+    color:#47A3D5;
+    font-weight:bold;
+}
+.HeaderTitle--MainTitleStatus{
+    font-size: 20px;
+    color:#47A3D5;
+    font-weight:lighter;
+}
+
+.HeaderTitle--DocNumber{
+    color:#333;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.HeaderTitle--DocNumberStatus{
+    color:#333;
+    font-size: 16px;
+    font-weight:lighter;
+}
+/**
+ * UserPic
+ */
+.header--UserPic{
+    display:inline-block;
+    margin:0 22px 0 20px;
+    align-items:center;
+    flex:35px;
+    display: flex;
+}
+.header--UserPic--image{
+    width:35px;
+    height:36px;
+    margin:12px 0;
+}
+
+/**
+ * Langs
+ */
+.HeaderLangMenu{
+    display:inline-block;
+    flex: 74px 0 0;
+    margin:0 20px 0 0;
+    font-size:16px;
+    text-transform: uppercase;
+}
+.HeaderLangMenu--Item{
+    color:#333;
+    text-decoration:none;
+    font-weight:normal;
+}
+.HeaderLangMenu--Item--active{
+    color:#47A3D5;
+}
+
+/* Second header: menu */
+.HeaderMenu{
+    border-top:1px #EBEBEB solid;
+    border-bottom:1px #EBEBEB solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderMenuActions{
+    height:24px;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:16px;
+    margin-bottom:8px;
+    display:flex;
+}
+.HeaderMenuActions--Item{
+    font-size: 16px;
+    margin-right:32px;
+    color:#333;
+    text-decoration:none;
+}
+
+.HeaderMenuExpandCollapse{
+    margin-right:20px;
+    height:24px;
+    margin-top:16px;
+    margin-bottom:8px;
+}
+
+.HeaderMenuExpandCollapse--Item{
+    margin-left:20px;
+    color:#666;
+    text-decoration: none;
+}
+
+/**/
+fieldset{
+    border:0;
+    margin:0;
+    padding: 0;
+}
+
+
+.MainBlock{
+    display:flex;
+}
+
+.MainFormSectionNavigation{
+    flex:272px 0 0;
+}
+
+.MainFormSections{
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:12px;
+}
+
+.MainFormSections--Item{
+    padding-left:40px;
+    text-transform:uppercase;
+    height:32px;
+    line-height:32px;
+}
+.MainFormSections--Item:first-child{
+    background: rgba(8, 137, 208, .2);
+}
+
+.MainFormSections--Item--Link{
+    color:#333;
+    text-decoration: none;
+}
+
+
+/**/
+.MainForm{
+    flex:99% 0 0;
+}
+
+
+/**/
+.FormSectionHeader{
+    height:32px;
+    line-height:32px;
+    margin:0 0 0 0;
+    color:#333;
+    font-size: 14px;
+    text-transform:uppercase;
+    background:rgba(8, 137, 208, .2);
+    padding-left:40px;
+}
+
+.FormSectionContent{
+    padding-left:40px;
+    padding-top:24px;
+}
+
+
+
+
+.full-width{width:100%;}
+
+
+
+
+fieldset{
+    margin:40px 0;
+}
+input.mat-input-element {
+    border-bottom: 1px solid #aaa;
+}
