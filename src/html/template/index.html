@@ -53,11 +53,12 @@
                     </div>
                 </div>
                 <div class="error-message__content">
-                    <div class="error-message__title">Ошибка!</div>
-                    <span class="error-succinct-message__title">
-                        <span class="error-message__message-text">, </span>
-                        <a class="error-message__message-text">полный П соединению с серваком</a>
-                    </span>
+                    <div class="error-message__title">Ошибка!
+                        <span class="error-succinct-message__title">
+                            <span class="error-message__message-text">, <a class="error-message__message-text">полный трындец соединению с серваком</a></span>
+                        </span>
+                    </div>
+
                 </div>
                 <div class="information">
                         <div class="information__header">
@@ -66,7 +67,7 @@
                             <div class="content-section__button">Кнопка</div>
                         </div>
                         <div class="information__messages-wrapper">
-                            <div class="information__message information__message--min">Сообщение сообщение сообщение</div>
+                            <div class="information__message information__message--min">Очень важное информационное соединение</div>
                         </div>
                 </div>
             </div>
@@ -105,98 +106,162 @@
                         <main class="MainForm">
                             <form class="ng-pristine ng-invalid ng-star-inserted ng-touched">
                                     <div class="content-section sn-viewport--in">
-                                            <a id="section1"></a>
-                                            <div class="content-section__header content-section__header--active">ОСНОВНЫЕ РЕКВИЗИТЫ</div>
-                                            <div class="field-wrapper ng-pristine ng-invalid nf-touched">
-                                                <div class="content-section__input-group">
-                                                    <fieldset hidden>
-                                                        <div class="content-section__title-wrapper">
-                                                            <div class="content-section__title content-section__title--no-icon">
-                                                                "Id"
+                                        <div class="content-section__header content-section__header--active">ОСНОВНЫЕ РЕКВИЗИТЫ</div>
+                                        <!--content start-->
+                                            <div class="full-width ng-star-inserted">
+                                                <div class="field-wrapper ng-pristine ng-invalid ng-touched">
+                                                    <div class="content-section__input-group">
+                                                        <fieldset>
+                                                            <div class="content-section__title-wrapper">
+                                                                <div class="content-section__title content-section__title--no-icon">
+                                                                    "Категория документа"
+                                                                    <span class="ng-star-inserted">*</span>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="content-section__input content-section__input--width65">
                                                             <div class="mat-form-field-wrapper">
                                                                 <div class="mat-form-field-flex">
-                                                                        <div class="mat-form-field-infix">
-                                                                            <input class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid" />
-                                                                            <span class="mat-form-field-label-wrapper"></span>
-                                                                        </div>
+                                                                    <div class="mat-form-field-infix">
+                                                                        <input class="content-section__text mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-pristine ng-valid ng-touched" value="Договоры / Н.Договор"/>
+                                                                        <span class="mat-form-field-label-wrapper"></span>
+                                                                    </div>
+                                                                    <div class="mat-form-field-underline ng-tns-c4-0 ng-star-inserted">
+                                                                        <span class="mat-form-field-ripple"></span>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="mat-form-field-underline ng-tns-c4-0 ng-star-inserted">
+                                                                <div class="mat-form-field-underline ng-tns-c4-1 ng-star-inserted">
                                                                     <span class="mat-form-field-ripple"></span>
                                                                 </div>
                                                                 <div class="mat-form-field-subscript-wrapper">
-                                                                    <div class="mat-form-field-hint-wrapper ng-tns-c4-0 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                                    style="opacity: 1; transform: translateY(0%);">
+                                                                    <div class="mat-form-field-hint-wrapper ng-tns-c4-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted" style="opacity: 1; transform: translateY(0%);">
                                                                         <div class="mat-form-field-hint-spacer"></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="content-section__error ng-star-inserted"></div>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
-                                            <div class="field-wrapper ng-pristine ng-invalid ng-touched" id="field2">
-                                                <div class="content-section__input-group">
+                                                            <div class="content-section__error ng-star-inserted"></div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div><!--field-wrapper-->
+                                            </div><!--full-width-->
+
+                                            <div class="full-width ng-star-inserted">
+                                                <div class="field-wrapper ng-pristine ng-invalid ng-touched">
+                                                    <div class="content-section__input-group">
                                                         <fieldset>
+                                                            <div class="content-section__title-wrapper">
+                                                                <div class="content-section__icon ng-star-inserted"></div>
+                                                                <div class="content-section__title"> Смешанный характер
+                                                                    <span class="ng-star-inserted">*</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ng-star-inserted"><!--hint-->
+                                                                <div class="content-section__hint">
+                                                                    <div class="mat-hint">
+                                                                        <div class="content-section__hint-close"></div>
+                                                                        <p>Системное поле СЭД, определяющее орг. ед. – «владельца» документа (юр.лицо / филиал). 
+                                                                            По умолчанию заполняется автоматически, может быть изменено в случае, если сотрудник 
+                                                                            имеет возможность работать от имени нескольких орг. Единиц
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!--end hint-->
+                                                            <div class="content-section__input content-section__input--width65">
+                                                                <div class="field-wrapper full-width ng-pristine ng-invalid ng-touched">
+                                                                    <div class="content-section__selector content-section__text mat-select ng-tns-c7-2 ng-pristine ng-valid ng-touched">
+                                                                        <div class="mat-select-trigger trigger--long">
+                                                                            <select class="mat-select-value select--long">
+                                                                                <option class="mat-select-value-text ng-tns-c7-2 ng-star-inserted option--long">
+                                                                                        Русал Глобал Менеджмент1
+                                                                                </option>
+                                                                                <option class="mat-select-value-text ng-tns-c7-2 ng-star-inserted option--long">
+                                                                                        Русал Глобал Менеджмент2
+                                                                                </option>
+                                                                            </select>
+                                                                            <div class="mat-select-arrow-wrapper">
+                                                                                <div class="mat-select-arrow"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-section__error ng-star-inserted"></div>
+                                                        </fieldset>
+                                                    </div>
+                                                </div><!--field-wrapper-->
+                                            </div>
+                                            <div class="full-width ng-star-inserted">
+                                                <div class="field-wrapper ng-pristine ng-invalid ng-touched">
+                                                        <div class="content-section__input-group">
+                                                            <fieldset>
                                                                 <div class="content-section__title-wrapper">
-                                                                    <div class="content-section__title content-section__title--no-icon">
-                                                                        "Категория документа"
+                                                                    <div class="content-section__icon ng-star-inserted"></div>
+                                                                    <div class="content-section__title"> Орг.единица 
                                                                         <span class="ng-star-inserted">*</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="mat-form-field-wrapper">
-                                                                    <div class="mat-form-field-flex">
-                                                                        <div class="mat-form-field-infix">
-                                                                            <input class="content-section__text mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-pristine ng-valid ng-touched" value="Договоры / Н.Договор"/>
-                                                                            <span class="mat-form-field-label-wrapper"></span>
-                                                                        </div>
-                                                                        <div class="mat-form-field-underline ng-tns-c4-0 ng-star-inserted">
-                                                                            <span class="mat-form-field-ripple"></span>
+                                                                <div class="ng-star-inserted"><!--hint-->
+                                                                    <div class="content-section__hint">
+                                                                        <div class="mat-hint">
+                                                                            <div class="content-section__hint-close"></div>
+                                                                            <p>Значение "Да" присваивается документам, в которых содержатся элементы различных договоров,
+                                                                                 предусмотренных законом или иными правовыми актами (смешанный договор), когда предмет договора
+                                                                                  можно характеризовать несколькими значениями видов договоров. Например, договор на организацию
+                                                                                   корпоративного спортивного мероприятия, по которому контрагент предоставляет и услуги по ведению
+                                                                                    мероприятия, и имущество в аренду (что оформляется актом приема-передачи) имеет смешанный характер,
+                                                                                     поскольку его характеризуют следующие виды договоров «Договор на оказание услуг по проведению корпоративного
+                                                                                      профессионального мероприятия (в т.ч. спортивного, командообразующего и пр.)» и «Договор аренды имущества
+                                                                                       для организации корпоративного профессионального мероприятия».
                                                                         </div>
                                                                     </div>
-                                                                    <div class="mat-form-field-underline ng-tns-c4-1 ng-star-inserted">
-                                                                        <span class="mat-form-field-ripple"></span>
-                                                                    </div>
-                                                                    <div class="mat-form-field-subscript-wrapper">
-                                                                        <div class="mat-form-field-hint-wrapper ng-tns-c4-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted" style="opacity: 1; transform: translateY(0%);">
-                                                                            <div class="mat-form-field-hint-spacer"></div>
+                                                                </div><!--end hint-->
+
+
+                                                                <div class="ng-star-inserted">
+                                                                    <div class="content-section__radio-group ng-pristine ng-invalid ng-touched">
+                                                                        <div class="content-section__radio">
+                                                                            <div class="content-section__check-wrapper">
+                                                                                <div class="content-section__check-label content-section__text mat-checkbox mat-accent ng-untouched ng-pristine ng-valid">
+                                                                                    <label class="mat-checkbox-layout content-section__container">
+                                                                                        <div class="mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin">
+                                                                                            <input class="mat-checkbox-input  content-section__checkbox cdk-visually-hidden" type="checkbox"><!---->
+                                                                                            <span class="mat-checkbox-frame mat-checkbox-background content-section__checkmarck "></span>
+                                                                                           <!-- <div class="mat-checkbox-ripple mat-ripple"></div>
+                                                                                            <div class="mat-checkbox-frame"></div>-->
+                                                                                           <!-- <div class="mat-checkbox-background">
+
+                                                                                                
+
+                                                                                                <svg xml:space="preserve" class="mat-checkbox-checkmark" focusable="false" version="1.1" viewBox="0 0 24 24">
+                                                                                                    <path class="mat-checkbox-checkmark-path" d="M4.1,12.7 9,17.6 20.3,6.3" fill="none" stroke="white"></path>
+                                                                                                </svg>-->
+
+
+                                                                                               <!-- <div class="mat-checkbox-mixedmark"></div>
+                                                                                            </div>-->
+                                                                                        </div>
+                                                                                        <span class="mat-checkbox-label">
+                                                                                            <span style="display:none">&nbsp;</span>
+                                                                                        </span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="content-section__label--checkbox">Смешанный характер</div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            <div class="content-section__error ng-star-inserted"></div>
-                                                        </fieldset>
-                                                </div>
-                                            </div>
-                                            <div class="field-wrapper ng-pristine ng-invalid ng-touched" ng-reflect-form="[object Object]" id="field3">
-                                                <div class="content-section__input-group">
-                                                    <fieldset>
-                                                        <div class="content-section__title-wrapper">
-                                                            <div class="content-section__icon ng-star-inserted" ng-reflect-klass="content-section__icon"></div>
-                                                            <div class="content-section__title" ng-reflect-klass="content-section__title" ng-reflect-ng-class="[object Object]"> Орг.единица 
-                                                                <span class="ng-star-inserted">*</span>
-                                                            </div>
+
+
+
+
+                                                                <div class="content-section__error ng-star-inserted"></div>
+                                                            </fieldset>
                                                         </div>
-                                                        <div class="content-section__input content-section__input--width65">
-                                                            <div class="field-wrapper full-width ng-pristine ng-invalid ng-touched">
-                                                                <div class="mat-select-trigger">
-                                                                    <div class="mat-select-value">
-                                                                        <span class="mat-select-value-text ng-tns-c7-2 ng-star-inserted">
-                                                                            <span class="ng-tns-c7-2 ng-star-inserted">Русал Глобал Менеджмент</span>
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="mat-select-arrow-wrapper">
-                                                                        <div class="mat-select-arrow"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="content-section__error ng-star-inserted"></div>
-                                                    </fieldset>
+                                                    </div>
                                                 </div>
-                                            </div>
+
+
+
+
+
 </div>
 </form>
 </main>
