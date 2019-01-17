@@ -158,10 +158,10 @@ fieldset{
 
 
 /**/
-.MainForm{
+/*.MainForm{
     flex:99% 0 0;
 }
-
+*/
 
 /**/
 .FormSectionHeader{
@@ -191,87 +191,3 @@ fieldset{
 fieldset{
     margin:40px 0;
 }
-input.mat-input-element {
-    border-bottom: 1px solid #aaa;
-}
-.trigger--long{
-    width: 107%;
-}
-.select--long{
-    max-width: 100%;
-    border: transparent;
-    background: transparent;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    z-index: 10;
-    cursor: pointer;
-    outline: none;
-    font-weight: 500;
-    font-family: 'Roboto-Medium', sans-serif;
-}
-.option--long{
-    max-width: 200%;
-    width: 100%;
-    border: transparent;
-    background: transparent;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    outline: none;
-}
-.content-section__container{
-    display: block;
-    position: relative;
-    padding-left: 0px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.content-section__container input{
-    opacity: 0;
-    cursor: pointer;
-}
-.content-section__checkmarck{
-    position: absolute;
-    top: 2px;
-    left: 0;
-    height: 21px;
-    width: 21px;;
-}
-.content-section__container input:checked ~.content-section__checkmarck {
-    background-color: #47a3d5;
-  }
-  .content-section__container input:checked ~.mat-checkbox-frame {
-    border-color:#47a3d5;
-  }
-
-  .content-section__checkmarck:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .content-section__container input:checked ~ .content-section__checkmarck:after {
-    display: block;
-  }
-  
-
-  .content-section__container .content-section__checkmarck:after {
-    left: 5px;
-    top: 0px;
-    width: 6px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(46deg);
-    -ms-transform: rotate(46deg);
-    transform: rotate(46deg);
-  }
-  .content-section__label--marg-top--small{
-    margin-top: 5px;
-  }
